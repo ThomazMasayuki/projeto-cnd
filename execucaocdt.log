@@ -1,0 +1,1174 @@
+2025-09-01 19:50:39.645 | INFO     | __main__:processar_cdt:63 - Iniciando automação da aba: CDT
+2025-09-01 19:50:40.520 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 22988817000152
+2025-09-01 19:51:11.683 | ERROR    | __main__:processar_cdt:135 - 22988817000152 → ERRO: TargetClosedError: Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name="Registro no Cadastro Nacional")
+
+2025-09-01 19:51:11.684 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 24061787000160
+2025-09-01 19:51:11.687 | ERROR    | __main__:processar_cdt:135 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.689 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 61745095000167
+2025-09-01 19:51:11.691 | ERROR    | __main__:processar_cdt:135 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.692 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 07098574000193
+2025-09-01 19:51:11.695 | ERROR    | __main__:processar_cdt:135 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.696 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 61289975000176
+2025-09-01 19:51:11.699 | ERROR    | __main__:processar_cdt:135 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.700 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 32181064000122
+2025-09-01 19:51:11.703 | ERROR    | __main__:processar_cdt:135 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.704 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 45880695000181
+2025-09-01 19:51:11.705 | ERROR    | __main__:processar_cdt:135 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.707 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 11999645000104
+2025-09-01 19:51:11.709 | ERROR    | __main__:processar_cdt:135 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.711 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 41070149000124
+2025-09-01 19:51:11.713 | ERROR    | __main__:processar_cdt:135 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.715 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 00060631600272
+2025-09-01 19:51:11.718 | ERROR    | __main__:processar_cdt:135 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.719 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 47274662000113
+2025-09-01 19:51:11.722 | ERROR    | __main__:processar_cdt:135 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.724 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 38112365000180
+2025-09-01 19:51:11.726 | ERROR    | __main__:processar_cdt:135 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.728 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 30080700000102
+2025-09-01 19:51:11.730 | ERROR    | __main__:processar_cdt:135 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.732 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 43023281000100
+2025-09-01 19:51:11.735 | ERROR    | __main__:processar_cdt:135 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.737 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 35856232000120
+2025-09-01 19:51:11.739 | ERROR    | __main__:processar_cdt:135 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.741 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 51516274000179
+2025-09-01 19:51:11.743 | ERROR    | __main__:processar_cdt:135 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.744 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 53165195000196
+2025-09-01 19:51:11.746 | ERROR    | __main__:processar_cdt:135 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.747 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 09461099000101
+2025-09-01 19:51:11.749 | ERROR    | __main__:processar_cdt:135 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.750 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 21967775000100
+2025-09-01 19:51:11.752 | ERROR    | __main__:processar_cdt:135 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.753 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 38059475000126
+2025-09-01 19:51:11.755 | ERROR    | __main__:processar_cdt:135 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.756 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 47766186000158
+2025-09-01 19:51:11.758 | ERROR    | __main__:processar_cdt:135 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.759 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 00000863578241
+2025-09-01 19:51:11.760 | ERROR    | __main__:processar_cdt:135 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.762 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 41505475000117
+2025-09-01 19:51:11.763 | ERROR    | __main__:processar_cdt:135 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.764 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 50992729000160
+2025-09-01 19:51:11.766 | ERROR    | __main__:processar_cdt:135 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.767 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 00058886621272
+2025-09-01 19:51:11.769 | ERROR    | __main__:processar_cdt:135 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.770 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 17871432000170
+2025-09-01 19:51:11.772 | ERROR    | __main__:processar_cdt:135 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.773 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 05962437000120
+2025-09-01 19:51:11.775 | ERROR    | __main__:processar_cdt:135 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:11.889 | INFO     | __main__:processar_cdt:141 - Processo concluído.
+2025-09-01 19:51:32.151 | INFO     | __main__:processar_cdt:63 - Iniciando automação da aba: CDT
+2025-09-01 19:51:33.066 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 22988817000152
+2025-09-01 19:51:36.552 | ERROR    | __main__:processar_cdt:135 - 22988817000152 → ERRO: TargetClosedError: Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for get_by_role("textbox", name="Registro no Cadastro Nacional")
+
+2025-09-01 19:51:36.554 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 24061787000160
+2025-09-01 19:51:36.556 | ERROR    | __main__:processar_cdt:135 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.558 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 61745095000167
+2025-09-01 19:51:36.560 | ERROR    | __main__:processar_cdt:135 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.562 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 07098574000193
+2025-09-01 19:51:36.564 | ERROR    | __main__:processar_cdt:135 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.566 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 61289975000176
+2025-09-01 19:51:36.568 | ERROR    | __main__:processar_cdt:135 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.569 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 32181064000122
+2025-09-01 19:51:36.571 | ERROR    | __main__:processar_cdt:135 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.573 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 45880695000181
+2025-09-01 19:51:36.575 | ERROR    | __main__:processar_cdt:135 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.576 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 11999645000104
+2025-09-01 19:51:36.579 | ERROR    | __main__:processar_cdt:135 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.580 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 41070149000124
+2025-09-01 19:51:36.583 | ERROR    | __main__:processar_cdt:135 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.584 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 00060631600272
+2025-09-01 19:51:36.586 | ERROR    | __main__:processar_cdt:135 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.588 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 47274662000113
+2025-09-01 19:51:36.590 | ERROR    | __main__:processar_cdt:135 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.592 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 38112365000180
+2025-09-01 19:51:36.594 | ERROR    | __main__:processar_cdt:135 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.595 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 30080700000102
+2025-09-01 19:51:36.598 | ERROR    | __main__:processar_cdt:135 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.599 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 43023281000100
+2025-09-01 19:51:36.601 | ERROR    | __main__:processar_cdt:135 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.603 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 35856232000120
+2025-09-01 19:51:36.605 | ERROR    | __main__:processar_cdt:135 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.607 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 51516274000179
+2025-09-01 19:51:36.610 | ERROR    | __main__:processar_cdt:135 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.613 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 53165195000196
+2025-09-01 19:51:36.615 | ERROR    | __main__:processar_cdt:135 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.617 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 09461099000101
+2025-09-01 19:51:36.620 | ERROR    | __main__:processar_cdt:135 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.622 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 21967775000100
+2025-09-01 19:51:36.624 | ERROR    | __main__:processar_cdt:135 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.626 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 38059475000126
+2025-09-01 19:51:36.628 | ERROR    | __main__:processar_cdt:135 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.629 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 47766186000158
+2025-09-01 19:51:36.631 | ERROR    | __main__:processar_cdt:135 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.632 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 00000863578241
+2025-09-01 19:51:36.634 | ERROR    | __main__:processar_cdt:135 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.635 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 41505475000117
+2025-09-01 19:51:36.637 | ERROR    | __main__:processar_cdt:135 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.638 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 50992729000160
+2025-09-01 19:51:36.640 | ERROR    | __main__:processar_cdt:135 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.641 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 00058886621272
+2025-09-01 19:51:36.643 | ERROR    | __main__:processar_cdt:135 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.644 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 17871432000170
+2025-09-01 19:51:36.646 | ERROR    | __main__:processar_cdt:135 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.647 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 05962437000120
+2025-09-01 19:51:36.649 | ERROR    | __main__:processar_cdt:135 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:51:36.773 | INFO     | __main__:processar_cdt:141 - Processo concluído.
+2025-09-01 19:52:03.053 | INFO     | __main__:processar_cdt:63 - Iniciando automação da aba: CDT
+2025-09-01 19:52:03.963 | INFO     | __main__:processar_cdt:80 - Consultando CNPJ: 22988817000152
+2025-09-01 19:52:05.551 | INFO     | __main__:processar_cdt:95 - Captcha lido: 'Captcha para permitir a consulta.'
+2025-09-01 19:55:24.224 | INFO     | __main__:processar_cdt:64 - Iniciando automação da aba: CDT
+2025-09-01 19:55:25.106 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 22988817000152
+2025-09-01 19:55:30.172 | INFO     | __main__:processar_cdt:100 - Captcha lido: 'nb fCSIRV'
+2025-09-01 19:55:53.562 | INFO     | __main__:processar_cdt:64 - Iniciando automação da aba: CDT
+2025-09-01 19:55:54.464 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 22988817000152
+2025-09-01 19:55:59.651 | INFO     | __main__:processar_cdt:100 - Captcha lido: 'n yeiyal wes'
+2025-09-01 19:57:16.601 | INFO     | __main__:processar_cdt:64 - Iniciando automação da aba: CDT
+2025-09-01 19:57:17.474 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 22988817000152
+2025-09-01 19:57:22.586 | INFO     | __main__:processar_cdt:100 - Captcha lido: 'OWES'
+2025-09-01 19:57:48.858 | INFO     | __main__:processar_cdt:64 - Iniciando automação da aba: CDT
+2025-09-01 19:57:49.750 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 22988817000152
+2025-09-01 19:57:54.861 | INFO     | __main__:processar_cdt:100 - Captcha lido: 'tel 8 Mra ox'
+2025-09-01 19:58:26.396 | ERROR    | __main__:processar_cdt:141 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 19:58:26.397 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 24061787000160
+2025-09-01 19:58:26.400 | ERROR    | __main__:processar_cdt:141 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.401 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 61745095000167
+2025-09-01 19:58:26.403 | ERROR    | __main__:processar_cdt:141 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.405 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 07098574000193
+2025-09-01 19:58:26.407 | ERROR    | __main__:processar_cdt:141 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.409 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 61289975000176
+2025-09-01 19:58:26.411 | ERROR    | __main__:processar_cdt:141 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.412 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 32181064000122
+2025-09-01 19:58:26.414 | ERROR    | __main__:processar_cdt:141 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.416 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 45880695000181
+2025-09-01 19:58:26.418 | ERROR    | __main__:processar_cdt:141 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.419 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 11999645000104
+2025-09-01 19:58:26.421 | ERROR    | __main__:processar_cdt:141 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.422 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 41070149000124
+2025-09-01 19:58:26.424 | ERROR    | __main__:processar_cdt:141 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.425 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 00060631600272
+2025-09-01 19:58:26.427 | ERROR    | __main__:processar_cdt:141 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.429 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 47274662000113
+2025-09-01 19:58:26.432 | ERROR    | __main__:processar_cdt:141 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.433 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 38112365000180
+2025-09-01 19:58:26.435 | ERROR    | __main__:processar_cdt:141 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.437 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 30080700000102
+2025-09-01 19:58:26.439 | ERROR    | __main__:processar_cdt:141 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.441 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 43023281000100
+2025-09-01 19:58:26.444 | ERROR    | __main__:processar_cdt:141 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.446 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 35856232000120
+2025-09-01 19:58:26.451 | ERROR    | __main__:processar_cdt:141 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.453 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 51516274000179
+2025-09-01 19:58:26.455 | ERROR    | __main__:processar_cdt:141 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.457 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 53165195000196
+2025-09-01 19:58:26.459 | ERROR    | __main__:processar_cdt:141 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.460 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 09461099000101
+2025-09-01 19:58:26.462 | ERROR    | __main__:processar_cdt:141 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.463 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 21967775000100
+2025-09-01 19:58:26.465 | ERROR    | __main__:processar_cdt:141 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.467 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 38059475000126
+2025-09-01 19:58:26.469 | ERROR    | __main__:processar_cdt:141 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.470 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 47766186000158
+2025-09-01 19:58:26.472 | ERROR    | __main__:processar_cdt:141 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.473 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 00000863578241
+2025-09-01 19:58:26.475 | ERROR    | __main__:processar_cdt:141 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.477 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 41505475000117
+2025-09-01 19:58:26.479 | ERROR    | __main__:processar_cdt:141 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.480 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 50992729000160
+2025-09-01 19:58:26.482 | ERROR    | __main__:processar_cdt:141 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.483 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 00058886621272
+2025-09-01 19:58:26.485 | ERROR    | __main__:processar_cdt:141 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.487 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 17871432000170
+2025-09-01 19:58:26.489 | ERROR    | __main__:processar_cdt:141 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.491 | INFO     | __main__:processar_cdt:81 - Consultando CNPJ: 05962437000120
+2025-09-01 19:58:26.493 | ERROR    | __main__:processar_cdt:141 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 19:58:26.626 | INFO     | __main__:processar_cdt:147 - Processo concluído.
+2025-09-01 20:00:49.789 | INFO     | __main__:processar_cdt:79 - Iniciando automação da aba: CDT
+2025-09-01 20:00:50.700 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 22988817000152
+2025-09-01 20:00:55.817 | ERROR    | __main__:processar_cdt:156 - 22988817000152 → ERRO: NameError: name 'cv2' is not defined
+2025-09-01 20:00:55.820 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 24061787000160
+2025-09-01 20:00:59.720 | ERROR    | __main__:processar_cdt:156 - 24061787000160 → ERRO: NameError: name 'cv2' is not defined
+2025-09-01 20:00:59.723 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 61745095000167
+2025-09-01 20:01:03.616 | ERROR    | __main__:processar_cdt:156 - 61745095000167 → ERRO: NameError: name 'cv2' is not defined
+2025-09-01 20:01:03.617 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 07098574000193
+2025-09-01 20:01:05.946 | ERROR    | __main__:processar_cdt:156 - 07098574000193 → ERRO: TargetClosedError: Locator.screenshot: Target page, context or browser has been closed
+2025-09-01 20:01:05.948 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 61289975000176
+2025-09-01 20:01:05.950 | ERROR    | __main__:processar_cdt:156 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.951 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 32181064000122
+2025-09-01 20:01:05.952 | ERROR    | __main__:processar_cdt:156 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.953 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 45880695000181
+2025-09-01 20:01:05.955 | ERROR    | __main__:processar_cdt:156 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.956 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 11999645000104
+2025-09-01 20:01:05.958 | ERROR    | __main__:processar_cdt:156 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.960 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 41070149000124
+2025-09-01 20:01:05.962 | ERROR    | __main__:processar_cdt:156 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.964 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 00060631600272
+2025-09-01 20:01:05.966 | ERROR    | __main__:processar_cdt:156 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.968 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 47274662000113
+2025-09-01 20:01:05.970 | ERROR    | __main__:processar_cdt:156 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.971 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 38112365000180
+2025-09-01 20:01:05.973 | ERROR    | __main__:processar_cdt:156 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.974 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 30080700000102
+2025-09-01 20:01:05.976 | ERROR    | __main__:processar_cdt:156 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.978 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 43023281000100
+2025-09-01 20:01:05.981 | ERROR    | __main__:processar_cdt:156 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.983 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 35856232000120
+2025-09-01 20:01:05.986 | ERROR    | __main__:processar_cdt:156 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.987 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 51516274000179
+2025-09-01 20:01:05.990 | ERROR    | __main__:processar_cdt:156 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.991 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 53165195000196
+2025-09-01 20:01:05.994 | ERROR    | __main__:processar_cdt:156 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.995 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 09461099000101
+2025-09-01 20:01:05.997 | ERROR    | __main__:processar_cdt:156 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:05.999 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 21967775000100
+2025-09-01 20:01:06.001 | ERROR    | __main__:processar_cdt:156 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.002 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 38059475000126
+2025-09-01 20:01:06.003 | ERROR    | __main__:processar_cdt:156 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.004 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 47766186000158
+2025-09-01 20:01:06.005 | ERROR    | __main__:processar_cdt:156 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.006 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 00000863578241
+2025-09-01 20:01:06.008 | ERROR    | __main__:processar_cdt:156 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.009 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 41505475000117
+2025-09-01 20:01:06.011 | ERROR    | __main__:processar_cdt:156 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.012 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 50992729000160
+2025-09-01 20:01:06.013 | ERROR    | __main__:processar_cdt:156 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.014 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 00058886621272
+2025-09-01 20:01:06.016 | ERROR    | __main__:processar_cdt:156 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.017 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 17871432000170
+2025-09-01 20:01:06.018 | ERROR    | __main__:processar_cdt:156 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.019 | INFO     | __main__:processar_cdt:96 - Consultando CNPJ: 05962437000120
+2025-09-01 20:01:06.021 | ERROR    | __main__:processar_cdt:156 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:01:06.133 | INFO     | __main__:processar_cdt:162 - Processo concluído.
+2025-09-01 20:01:54.043 | INFO     | __main__:processar_cdt:81 - Iniciando automação da aba: CDT
+2025-09-01 20:01:54.938 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 22988817000152
+2025-09-01 20:02:00.270 | INFO     | __main__:processar_cdt:117 - Captcha lido: 'waty tk i'
+2025-09-01 20:02:31.802 | ERROR    | __main__:processar_cdt:158 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:02:31.803 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 24061787000160
+2025-09-01 20:02:31.806 | ERROR    | __main__:processar_cdt:158 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.808 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 61745095000167
+2025-09-01 20:02:31.810 | ERROR    | __main__:processar_cdt:158 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.812 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 07098574000193
+2025-09-01 20:02:31.814 | ERROR    | __main__:processar_cdt:158 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.815 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 61289975000176
+2025-09-01 20:02:31.818 | ERROR    | __main__:processar_cdt:158 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.819 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 32181064000122
+2025-09-01 20:02:31.822 | ERROR    | __main__:processar_cdt:158 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.824 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 45880695000181
+2025-09-01 20:02:31.826 | ERROR    | __main__:processar_cdt:158 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.828 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 11999645000104
+2025-09-01 20:02:31.831 | ERROR    | __main__:processar_cdt:158 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.834 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 41070149000124
+2025-09-01 20:02:31.837 | ERROR    | __main__:processar_cdt:158 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.839 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 00060631600272
+2025-09-01 20:02:31.842 | ERROR    | __main__:processar_cdt:158 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.845 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 47274662000113
+2025-09-01 20:02:31.847 | ERROR    | __main__:processar_cdt:158 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.848 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 38112365000180
+2025-09-01 20:02:31.850 | ERROR    | __main__:processar_cdt:158 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.852 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 30080700000102
+2025-09-01 20:02:31.854 | ERROR    | __main__:processar_cdt:158 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.855 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 43023281000100
+2025-09-01 20:02:31.857 | ERROR    | __main__:processar_cdt:158 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.858 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 35856232000120
+2025-09-01 20:02:31.860 | ERROR    | __main__:processar_cdt:158 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.862 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 51516274000179
+2025-09-01 20:02:31.864 | ERROR    | __main__:processar_cdt:158 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.865 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 53165195000196
+2025-09-01 20:02:31.868 | ERROR    | __main__:processar_cdt:158 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.869 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 09461099000101
+2025-09-01 20:02:31.871 | ERROR    | __main__:processar_cdt:158 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.872 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 21967775000100
+2025-09-01 20:02:31.875 | ERROR    | __main__:processar_cdt:158 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.876 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 38059475000126
+2025-09-01 20:02:31.878 | ERROR    | __main__:processar_cdt:158 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.880 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 47766186000158
+2025-09-01 20:02:31.882 | ERROR    | __main__:processar_cdt:158 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.883 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 00000863578241
+2025-09-01 20:02:31.885 | ERROR    | __main__:processar_cdt:158 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.887 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 41505475000117
+2025-09-01 20:02:31.889 | ERROR    | __main__:processar_cdt:158 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.890 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 50992729000160
+2025-09-01 20:02:31.893 | ERROR    | __main__:processar_cdt:158 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.894 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 00058886621272
+2025-09-01 20:02:31.896 | ERROR    | __main__:processar_cdt:158 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.897 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 17871432000170
+2025-09-01 20:02:31.899 | ERROR    | __main__:processar_cdt:158 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:31.900 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 05962437000120
+2025-09-01 20:02:31.902 | ERROR    | __main__:processar_cdt:158 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:02:32.020 | INFO     | __main__:processar_cdt:164 - Processo concluído.
+2025-09-01 20:03:31.573 | INFO     | __main__:processar_cdt:81 - Iniciando automação da aba: CDT
+2025-09-01 20:03:32.444 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 22988817000152
+2025-09-01 20:03:37.610 | INFO     | __main__:processar_cdt:117 - Captcha lido: 'au Peak'
+2025-09-01 20:04:09.157 | ERROR    | __main__:processar_cdt:158 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:04:09.159 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 24061787000160
+2025-09-01 20:04:09.162 | ERROR    | __main__:processar_cdt:158 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.163 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 61745095000167
+2025-09-01 20:04:09.165 | ERROR    | __main__:processar_cdt:158 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.167 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 07098574000193
+2025-09-01 20:04:09.169 | ERROR    | __main__:processar_cdt:158 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.171 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 61289975000176
+2025-09-01 20:04:09.173 | ERROR    | __main__:processar_cdt:158 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.175 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 32181064000122
+2025-09-01 20:04:09.178 | ERROR    | __main__:processar_cdt:158 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.180 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 45880695000181
+2025-09-01 20:04:09.182 | ERROR    | __main__:processar_cdt:158 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.184 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 11999645000104
+2025-09-01 20:04:09.187 | ERROR    | __main__:processar_cdt:158 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.190 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 41070149000124
+2025-09-01 20:04:09.193 | ERROR    | __main__:processar_cdt:158 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.194 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 00060631600272
+2025-09-01 20:04:09.197 | ERROR    | __main__:processar_cdt:158 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.198 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 47274662000113
+2025-09-01 20:04:09.200 | ERROR    | __main__:processar_cdt:158 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.202 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 38112365000180
+2025-09-01 20:04:09.204 | ERROR    | __main__:processar_cdt:158 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.205 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 30080700000102
+2025-09-01 20:04:09.208 | ERROR    | __main__:processar_cdt:158 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.211 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 43023281000100
+2025-09-01 20:04:09.213 | ERROR    | __main__:processar_cdt:158 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.215 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 35856232000120
+2025-09-01 20:04:09.218 | ERROR    | __main__:processar_cdt:158 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.220 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 51516274000179
+2025-09-01 20:04:09.223 | ERROR    | __main__:processar_cdt:158 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.226 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 53165195000196
+2025-09-01 20:04:09.229 | ERROR    | __main__:processar_cdt:158 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.232 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 09461099000101
+2025-09-01 20:04:09.235 | ERROR    | __main__:processar_cdt:158 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.237 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 21967775000100
+2025-09-01 20:04:09.240 | ERROR    | __main__:processar_cdt:158 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.241 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 38059475000126
+2025-09-01 20:04:09.243 | ERROR    | __main__:processar_cdt:158 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.244 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 47766186000158
+2025-09-01 20:04:09.246 | ERROR    | __main__:processar_cdt:158 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.248 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 00000863578241
+2025-09-01 20:04:09.250 | ERROR    | __main__:processar_cdt:158 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.251 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 41505475000117
+2025-09-01 20:04:09.253 | ERROR    | __main__:processar_cdt:158 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.255 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 50992729000160
+2025-09-01 20:04:09.257 | ERROR    | __main__:processar_cdt:158 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.259 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 00058886621272
+2025-09-01 20:04:09.261 | ERROR    | __main__:processar_cdt:158 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.263 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 17871432000170
+2025-09-01 20:04:09.264 | ERROR    | __main__:processar_cdt:158 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.266 | INFO     | __main__:processar_cdt:98 - Consultando CNPJ: 05962437000120
+2025-09-01 20:04:09.268 | ERROR    | __main__:processar_cdt:158 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:04:09.406 | INFO     | __main__:processar_cdt:164 - Processo concluído.
+2025-09-01 20:08:25.515 | INFO     | __main__:processar_cdt:86 - Iniciando automação da aba: CDT
+2025-09-01 20:08:26.391 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 22988817000152
+2025-09-01 20:08:31.490 | INFO     | __main__:processar_cdt:122 - Captcha lido: 'n2k ey vy'
+2025-09-01 20:08:48.517 | INFO     | __main__:processar_cdt:86 - Iniciando automação da aba: CDT
+2025-09-01 20:08:49.378 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 22988817000152
+2025-09-01 20:08:54.551 | INFO     | __main__:processar_cdt:122 - Captcha lido: 'jp u se'
+2025-09-01 20:09:09.720 | INFO     | __main__:processar_cdt:86 - Iniciando automação da aba: CDT
+2025-09-01 20:09:10.608 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 22988817000152
+2025-09-01 20:09:15.731 | INFO     | __main__:processar_cdt:122 - Captcha lido: 'At mR x'
+2025-09-01 20:09:47.278 | ERROR    | __main__:processar_cdt:163 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:09:47.279 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 24061787000160
+2025-09-01 20:09:47.283 | ERROR    | __main__:processar_cdt:163 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.284 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 61745095000167
+2025-09-01 20:09:47.287 | ERROR    | __main__:processar_cdt:163 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.288 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 07098574000193
+2025-09-01 20:09:47.291 | ERROR    | __main__:processar_cdt:163 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.292 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 61289975000176
+2025-09-01 20:09:47.295 | ERROR    | __main__:processar_cdt:163 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.296 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 32181064000122
+2025-09-01 20:09:47.299 | ERROR    | __main__:processar_cdt:163 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.301 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 45880695000181
+2025-09-01 20:09:47.303 | ERROR    | __main__:processar_cdt:163 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.305 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 11999645000104
+2025-09-01 20:09:47.307 | ERROR    | __main__:processar_cdt:163 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.309 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 41070149000124
+2025-09-01 20:09:47.311 | ERROR    | __main__:processar_cdt:163 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.313 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 00060631600272
+2025-09-01 20:09:47.315 | ERROR    | __main__:processar_cdt:163 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.316 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 47274662000113
+2025-09-01 20:09:47.319 | ERROR    | __main__:processar_cdt:163 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.320 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 38112365000180
+2025-09-01 20:09:47.322 | ERROR    | __main__:processar_cdt:163 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.324 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 30080700000102
+2025-09-01 20:09:47.326 | ERROR    | __main__:processar_cdt:163 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.328 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 43023281000100
+2025-09-01 20:09:47.330 | ERROR    | __main__:processar_cdt:163 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.332 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 35856232000120
+2025-09-01 20:09:47.334 | ERROR    | __main__:processar_cdt:163 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.336 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 51516274000179
+2025-09-01 20:09:47.338 | ERROR    | __main__:processar_cdt:163 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.340 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 53165195000196
+2025-09-01 20:09:47.343 | ERROR    | __main__:processar_cdt:163 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.344 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 09461099000101
+2025-09-01 20:09:47.347 | ERROR    | __main__:processar_cdt:163 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.348 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 21967775000100
+2025-09-01 20:09:47.351 | ERROR    | __main__:processar_cdt:163 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.352 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 38059475000126
+2025-09-01 20:09:47.354 | ERROR    | __main__:processar_cdt:163 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.356 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 47766186000158
+2025-09-01 20:09:47.359 | ERROR    | __main__:processar_cdt:163 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.361 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 00000863578241
+2025-09-01 20:09:47.364 | ERROR    | __main__:processar_cdt:163 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.366 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 41505475000117
+2025-09-01 20:09:47.369 | ERROR    | __main__:processar_cdt:163 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.371 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 50992729000160
+2025-09-01 20:09:47.374 | ERROR    | __main__:processar_cdt:163 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.376 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 00058886621272
+2025-09-01 20:09:47.378 | ERROR    | __main__:processar_cdt:163 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.380 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 17871432000170
+2025-09-01 20:09:47.383 | ERROR    | __main__:processar_cdt:163 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.385 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 05962437000120
+2025-09-01 20:09:47.386 | ERROR    | __main__:processar_cdt:163 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:09:47.510 | INFO     | __main__:processar_cdt:169 - Processo concluído.
+2025-09-01 20:10:33.960 | INFO     | __main__:processar_cdt:86 - Iniciando automação da aba: CDT
+2025-09-01 20:10:34.866 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 22988817000152
+2025-09-01 20:10:39.974 | INFO     | __main__:processar_cdt:122 - Captcha lido: '3jdwi8'
+2025-09-01 20:10:59.389 | INFO     | __main__:processar_cdt:86 - Iniciando automação da aba: CDT
+2025-09-01 20:11:00.297 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 22988817000152
+2025-09-01 20:11:05.469 | INFO     | __main__:processar_cdt:122 - Captcha lido: 'K4ajljs'
+2025-09-01 20:11:39.800 | INFO     | __main__:processar_cdt:86 - Iniciando automação da aba: CDT
+2025-09-01 20:11:40.679 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 22988817000152
+2025-09-01 20:11:45.752 | INFO     | __main__:processar_cdt:122 - Captcha lido: '298tbs'
+2025-09-01 20:12:01.488 | INFO     | __main__:processar_cdt:86 - Iniciando automação da aba: CDT
+2025-09-01 20:12:02.377 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 22988817000152
+2025-09-01 20:12:14.337 | INFO     | __main__:processar_cdt:122 - Captcha lido: 'kowhesk'
+2025-09-01 20:12:45.885 | ERROR    | __main__:processar_cdt:163 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:12:45.886 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 24061787000160
+2025-09-01 20:12:45.889 | ERROR    | __main__:processar_cdt:163 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.891 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 61745095000167
+2025-09-01 20:12:45.893 | ERROR    | __main__:processar_cdt:163 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.895 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 07098574000193
+2025-09-01 20:12:45.897 | ERROR    | __main__:processar_cdt:163 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.899 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 61289975000176
+2025-09-01 20:12:45.901 | ERROR    | __main__:processar_cdt:163 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.902 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 32181064000122
+2025-09-01 20:12:45.905 | ERROR    | __main__:processar_cdt:163 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.907 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 45880695000181
+2025-09-01 20:12:45.909 | ERROR    | __main__:processar_cdt:163 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.910 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 11999645000104
+2025-09-01 20:12:45.912 | ERROR    | __main__:processar_cdt:163 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.914 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 41070149000124
+2025-09-01 20:12:45.916 | ERROR    | __main__:processar_cdt:163 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.918 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 00060631600272
+2025-09-01 20:12:45.920 | ERROR    | __main__:processar_cdt:163 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.921 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 47274662000113
+2025-09-01 20:12:45.924 | ERROR    | __main__:processar_cdt:163 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.925 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 38112365000180
+2025-09-01 20:12:45.927 | ERROR    | __main__:processar_cdt:163 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.930 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 30080700000102
+2025-09-01 20:12:45.933 | ERROR    | __main__:processar_cdt:163 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.935 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 43023281000100
+2025-09-01 20:12:45.938 | ERROR    | __main__:processar_cdt:163 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.941 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 35856232000120
+2025-09-01 20:12:45.944 | ERROR    | __main__:processar_cdt:163 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.945 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 51516274000179
+2025-09-01 20:12:45.948 | ERROR    | __main__:processar_cdt:163 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.949 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 53165195000196
+2025-09-01 20:12:45.952 | ERROR    | __main__:processar_cdt:163 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.953 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 09461099000101
+2025-09-01 20:12:45.955 | ERROR    | __main__:processar_cdt:163 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.956 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 21967775000100
+2025-09-01 20:12:45.958 | ERROR    | __main__:processar_cdt:163 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.960 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 38059475000126
+2025-09-01 20:12:45.962 | ERROR    | __main__:processar_cdt:163 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.964 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 47766186000158
+2025-09-01 20:12:45.966 | ERROR    | __main__:processar_cdt:163 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.968 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 00000863578241
+2025-09-01 20:12:45.971 | ERROR    | __main__:processar_cdt:163 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.973 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 41505475000117
+2025-09-01 20:12:45.975 | ERROR    | __main__:processar_cdt:163 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.977 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 50992729000160
+2025-09-01 20:12:45.980 | ERROR    | __main__:processar_cdt:163 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.982 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 00058886621272
+2025-09-01 20:12:45.984 | ERROR    | __main__:processar_cdt:163 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.986 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 17871432000170
+2025-09-01 20:12:45.989 | ERROR    | __main__:processar_cdt:163 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:45.990 | INFO     | __main__:processar_cdt:103 - Consultando CNPJ: 05962437000120
+2025-09-01 20:12:45.992 | ERROR    | __main__:processar_cdt:163 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:12:46.125 | INFO     | __main__:processar_cdt:169 - Processo concluído.
+2025-09-01 20:15:18.186 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:15:19.109 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:15:24.306 | INFO     | __main__:processar_cdt:134 - Captcha lido: 'byh2hw'
+2025-09-01 20:15:38.930 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:15:39.791 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:15:54.528 | INFO     | __main__:processar_cdt:134 - Captcha lido: 'xvx7'
+2025-09-01 20:16:26.057 | ERROR    | __main__:processar_cdt:175 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:16:26.059 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 24061787000160
+2025-09-01 20:16:26.062 | ERROR    | __main__:processar_cdt:175 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.064 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 61745095000167
+2025-09-01 20:16:26.066 | ERROR    | __main__:processar_cdt:175 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.068 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 07098574000193
+2025-09-01 20:16:26.071 | ERROR    | __main__:processar_cdt:175 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.073 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 61289975000176
+2025-09-01 20:16:26.076 | ERROR    | __main__:processar_cdt:175 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.077 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 32181064000122
+2025-09-01 20:16:26.080 | ERROR    | __main__:processar_cdt:175 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.082 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 45880695000181
+2025-09-01 20:16:26.084 | ERROR    | __main__:processar_cdt:175 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.085 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 11999645000104
+2025-09-01 20:16:26.088 | ERROR    | __main__:processar_cdt:175 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.089 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 41070149000124
+2025-09-01 20:16:26.092 | ERROR    | __main__:processar_cdt:175 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.094 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00060631600272
+2025-09-01 20:16:26.097 | ERROR    | __main__:processar_cdt:175 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.099 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 47274662000113
+2025-09-01 20:16:26.102 | ERROR    | __main__:processar_cdt:175 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.104 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 38112365000180
+2025-09-01 20:16:26.107 | ERROR    | __main__:processar_cdt:175 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.110 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 30080700000102
+2025-09-01 20:16:26.113 | ERROR    | __main__:processar_cdt:175 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.115 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 43023281000100
+2025-09-01 20:16:26.118 | ERROR    | __main__:processar_cdt:175 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.121 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 35856232000120
+2025-09-01 20:16:26.124 | ERROR    | __main__:processar_cdt:175 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.127 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 51516274000179
+2025-09-01 20:16:26.130 | ERROR    | __main__:processar_cdt:175 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.132 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 53165195000196
+2025-09-01 20:16:26.135 | ERROR    | __main__:processar_cdt:175 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.138 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 09461099000101
+2025-09-01 20:16:26.141 | ERROR    | __main__:processar_cdt:175 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.143 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 21967775000100
+2025-09-01 20:16:26.146 | ERROR    | __main__:processar_cdt:175 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.148 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 38059475000126
+2025-09-01 20:16:26.150 | ERROR    | __main__:processar_cdt:175 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.153 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 47766186000158
+2025-09-01 20:16:26.155 | ERROR    | __main__:processar_cdt:175 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.157 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00000863578241
+2025-09-01 20:16:26.159 | ERROR    | __main__:processar_cdt:175 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.160 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 41505475000117
+2025-09-01 20:16:26.162 | ERROR    | __main__:processar_cdt:175 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.163 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 50992729000160
+2025-09-01 20:16:26.165 | ERROR    | __main__:processar_cdt:175 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.166 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00058886621272
+2025-09-01 20:16:26.169 | ERROR    | __main__:processar_cdt:175 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.171 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 17871432000170
+2025-09-01 20:16:26.173 | ERROR    | __main__:processar_cdt:175 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.175 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 05962437000120
+2025-09-01 20:16:26.177 | ERROR    | __main__:processar_cdt:175 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:16:26.296 | INFO     | __main__:processar_cdt:181 - Processo concluído.
+2025-09-01 20:16:48.693 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:16:49.545 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:16:54.893 | INFO     | __main__:processar_cdt:134 - Captcha lido: 'suf 2'
+2025-09-01 20:17:23.950 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:17:24.869 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:17:30.050 | ERROR    | __main__:processar_cdt:175 - 22988817000152 → ERRO: TesseractError: (1, "read_params_file: Can't open tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 Estimating resolution as 334 Too few characters. Skipping this page Warning. Invalid resolution 0 dpi. Using 70 instead. Too few characters. Skipping this page Error during processing.")
+2025-09-01 20:17:30.052 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 24061787000160
+2025-09-01 20:17:34.139 | ERROR    | __main__:processar_cdt:175 - 24061787000160 → ERRO: TesseractError: (1, "read_params_file: Can't open tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 Estimating resolution as 331 Too few characters. Skipping this page Warning. Invalid resolution 0 dpi. Using 70 instead. Too few characters. Skipping this page Error during processing.")
+2025-09-01 20:17:34.140 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 61745095000167
+2025-09-01 20:17:38.219 | ERROR    | __main__:processar_cdt:175 - 61745095000167 → ERRO: TesseractError: (1, "read_params_file: Can't open tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 Estimating resolution as 355 Too few characters. Skipping this page Warning. Invalid resolution 0 dpi. Using 70 instead. Too few characters. Skipping this page Error during processing.")
+2025-09-01 20:17:38.220 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 07098574000193
+2025-09-01 20:17:38.224 | ERROR    | __main__:processar_cdt:175 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.225 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 61289975000176
+2025-09-01 20:17:38.227 | ERROR    | __main__:processar_cdt:175 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.229 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 32181064000122
+2025-09-01 20:17:38.231 | ERROR    | __main__:processar_cdt:175 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.233 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 45880695000181
+2025-09-01 20:17:38.235 | ERROR    | __main__:processar_cdt:175 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.236 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 11999645000104
+2025-09-01 20:17:38.238 | ERROR    | __main__:processar_cdt:175 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.240 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 41070149000124
+2025-09-01 20:17:38.242 | ERROR    | __main__:processar_cdt:175 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.244 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00060631600272
+2025-09-01 20:17:38.246 | ERROR    | __main__:processar_cdt:175 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.247 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 47274662000113
+2025-09-01 20:17:38.249 | ERROR    | __main__:processar_cdt:175 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.251 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 38112365000180
+2025-09-01 20:17:38.253 | ERROR    | __main__:processar_cdt:175 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.255 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 30080700000102
+2025-09-01 20:17:38.257 | ERROR    | __main__:processar_cdt:175 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.259 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 43023281000100
+2025-09-01 20:17:38.261 | ERROR    | __main__:processar_cdt:175 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.263 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 35856232000120
+2025-09-01 20:17:38.266 | ERROR    | __main__:processar_cdt:175 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.268 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 51516274000179
+2025-09-01 20:17:38.271 | ERROR    | __main__:processar_cdt:175 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.273 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 53165195000196
+2025-09-01 20:17:38.275 | ERROR    | __main__:processar_cdt:175 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.276 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 09461099000101
+2025-09-01 20:17:38.279 | ERROR    | __main__:processar_cdt:175 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.281 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 21967775000100
+2025-09-01 20:17:38.284 | ERROR    | __main__:processar_cdt:175 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.287 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 38059475000126
+2025-09-01 20:17:38.289 | ERROR    | __main__:processar_cdt:175 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.291 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 47766186000158
+2025-09-01 20:17:38.293 | ERROR    | __main__:processar_cdt:175 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.294 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00000863578241
+2025-09-01 20:17:38.297 | ERROR    | __main__:processar_cdt:175 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.299 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 41505475000117
+2025-09-01 20:17:38.302 | ERROR    | __main__:processar_cdt:175 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.304 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 50992729000160
+2025-09-01 20:17:38.306 | ERROR    | __main__:processar_cdt:175 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.309 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00058886621272
+2025-09-01 20:17:38.311 | ERROR    | __main__:processar_cdt:175 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.313 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 17871432000170
+2025-09-01 20:17:38.316 | ERROR    | __main__:processar_cdt:175 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.318 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 05962437000120
+2025-09-01 20:17:38.320 | ERROR    | __main__:processar_cdt:175 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:17:38.436 | INFO     | __main__:processar_cdt:181 - Processo concluído.
+2025-09-01 20:17:52.593 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:17:53.502 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:17:58.568 | INFO     | __main__:processar_cdt:134 - Captcha lido: 'Sk3743'
+2025-09-01 20:18:14.127 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:18:15.019 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:18:20.104 | INFO     | __main__:processar_cdt:134 - Captcha lido: 'e2rx'
+2025-09-01 20:18:37.373 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:18:38.265 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:18:43.314 | INFO     | __main__:processar_cdt:134 - Captcha lido: 'x
+x
+x
+G
+w'
+2025-09-01 20:19:02.183 | INFO     | __main__:processar_cdt:98 - Iniciando automação da aba: CDT
+2025-09-01 20:19:03.084 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 22988817000152
+2025-09-01 20:19:08.567 | INFO     | __main__:processar_cdt:134 - Captcha lido: 'woe'
+2025-09-01 20:19:40.115 | ERROR    | __main__:processar_cdt:175 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:19:40.116 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 24061787000160
+2025-09-01 20:19:40.119 | ERROR    | __main__:processar_cdt:175 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.121 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 61745095000167
+2025-09-01 20:19:40.123 | ERROR    | __main__:processar_cdt:175 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.125 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 07098574000193
+2025-09-01 20:19:40.127 | ERROR    | __main__:processar_cdt:175 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.128 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 61289975000176
+2025-09-01 20:19:40.131 | ERROR    | __main__:processar_cdt:175 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.132 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 32181064000122
+2025-09-01 20:19:40.135 | ERROR    | __main__:processar_cdt:175 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.136 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 45880695000181
+2025-09-01 20:19:40.138 | ERROR    | __main__:processar_cdt:175 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.140 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 11999645000104
+2025-09-01 20:19:40.142 | ERROR    | __main__:processar_cdt:175 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.143 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 41070149000124
+2025-09-01 20:19:40.145 | ERROR    | __main__:processar_cdt:175 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.147 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00060631600272
+2025-09-01 20:19:40.149 | ERROR    | __main__:processar_cdt:175 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.150 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 47274662000113
+2025-09-01 20:19:40.152 | ERROR    | __main__:processar_cdt:175 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.154 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 38112365000180
+2025-09-01 20:19:40.156 | ERROR    | __main__:processar_cdt:175 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.158 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 30080700000102
+2025-09-01 20:19:40.160 | ERROR    | __main__:processar_cdt:175 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.162 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 43023281000100
+2025-09-01 20:19:40.164 | ERROR    | __main__:processar_cdt:175 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.165 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 35856232000120
+2025-09-01 20:19:40.168 | ERROR    | __main__:processar_cdt:175 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.169 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 51516274000179
+2025-09-01 20:19:40.171 | ERROR    | __main__:processar_cdt:175 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.174 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 53165195000196
+2025-09-01 20:19:40.176 | ERROR    | __main__:processar_cdt:175 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.178 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 09461099000101
+2025-09-01 20:19:40.180 | ERROR    | __main__:processar_cdt:175 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.181 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 21967775000100
+2025-09-01 20:19:40.183 | ERROR    | __main__:processar_cdt:175 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.185 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 38059475000126
+2025-09-01 20:19:40.187 | ERROR    | __main__:processar_cdt:175 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.188 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 47766186000158
+2025-09-01 20:19:40.190 | ERROR    | __main__:processar_cdt:175 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.192 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00000863578241
+2025-09-01 20:19:40.194 | ERROR    | __main__:processar_cdt:175 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.195 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 41505475000117
+2025-09-01 20:19:40.198 | ERROR    | __main__:processar_cdt:175 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.200 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 50992729000160
+2025-09-01 20:19:40.202 | ERROR    | __main__:processar_cdt:175 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.204 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 00058886621272
+2025-09-01 20:19:40.206 | ERROR    | __main__:processar_cdt:175 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.208 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 17871432000170
+2025-09-01 20:19:40.210 | ERROR    | __main__:processar_cdt:175 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.211 | INFO     | __main__:processar_cdt:115 - Consultando CNPJ: 05962437000120
+2025-09-01 20:19:40.214 | ERROR    | __main__:processar_cdt:175 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:19:40.328 | INFO     | __main__:processar_cdt:181 - Processo concluído.
+2025-09-01 20:20:55.075 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-01 20:20:55.972 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-01 20:21:01.119 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'Ott'
+2025-09-01 20:21:12.806 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-01 20:21:13.688 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-01 20:21:18.791 | INFO     | __main__:processar_cdt:141 - Captcha lido: 're'
+2025-09-01 20:21:47.957 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-01 20:21:48.806 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-01 20:21:54.002 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'te'
+2025-09-01 20:22:25.551 | ERROR    | __main__:processar_cdt:182 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:22:25.552 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 24061787000160
+2025-09-01 20:22:25.555 | ERROR    | __main__:processar_cdt:182 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.557 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61745095000167
+2025-09-01 20:22:25.559 | ERROR    | __main__:processar_cdt:182 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.560 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 07098574000193
+2025-09-01 20:22:25.563 | ERROR    | __main__:processar_cdt:182 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.564 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61289975000176
+2025-09-01 20:22:25.566 | ERROR    | __main__:processar_cdt:182 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.568 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 32181064000122
+2025-09-01 20:22:25.570 | ERROR    | __main__:processar_cdt:182 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.572 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 45880695000181
+2025-09-01 20:22:25.574 | ERROR    | __main__:processar_cdt:182 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.576 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 11999645000104
+2025-09-01 20:22:25.578 | ERROR    | __main__:processar_cdt:182 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.579 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41070149000124
+2025-09-01 20:22:25.582 | ERROR    | __main__:processar_cdt:182 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.583 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00060631600272
+2025-09-01 20:22:25.585 | ERROR    | __main__:processar_cdt:182 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.587 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47274662000113
+2025-09-01 20:22:25.590 | ERROR    | __main__:processar_cdt:182 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.592 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38112365000180
+2025-09-01 20:22:25.595 | ERROR    | __main__:processar_cdt:182 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.598 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 30080700000102
+2025-09-01 20:22:25.601 | ERROR    | __main__:processar_cdt:182 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.603 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 43023281000100
+2025-09-01 20:22:25.605 | ERROR    | __main__:processar_cdt:182 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.606 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 35856232000120
+2025-09-01 20:22:25.608 | ERROR    | __main__:processar_cdt:182 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.610 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 51516274000179
+2025-09-01 20:22:25.613 | ERROR    | __main__:processar_cdt:182 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.614 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 53165195000196
+2025-09-01 20:22:25.617 | ERROR    | __main__:processar_cdt:182 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.619 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 09461099000101
+2025-09-01 20:22:25.622 | ERROR    | __main__:processar_cdt:182 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.623 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 21967775000100
+2025-09-01 20:22:25.625 | ERROR    | __main__:processar_cdt:182 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.627 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38059475000126
+2025-09-01 20:22:25.629 | ERROR    | __main__:processar_cdt:182 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.630 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47766186000158
+2025-09-01 20:22:25.632 | ERROR    | __main__:processar_cdt:182 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.634 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00000863578241
+2025-09-01 20:22:25.636 | ERROR    | __main__:processar_cdt:182 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.637 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41505475000117
+2025-09-01 20:22:25.639 | ERROR    | __main__:processar_cdt:182 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.640 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 50992729000160
+2025-09-01 20:22:25.642 | ERROR    | __main__:processar_cdt:182 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.643 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00058886621272
+2025-09-01 20:22:25.645 | ERROR    | __main__:processar_cdt:182 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.647 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 17871432000170
+2025-09-01 20:22:25.649 | ERROR    | __main__:processar_cdt:182 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.651 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 05962437000120
+2025-09-01 20:22:25.653 | ERROR    | __main__:processar_cdt:182 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:22:25.787 | INFO     | __main__:processar_cdt:188 - Processo concluído.
+2025-09-01 20:23:58.229 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:23:59.138 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:24:04.073 | ERROR    | __main__:processar_cdt:168 - 22988817000152 → ERRO: error: OpenCV(4.12.0) /io/opencv/modules/imgproc/src/smooth.dispatch.cpp:293: error: (-215:Assertion failed) ksize.width > 0 && ksize.width % 2 == 1 && ksize.height > 0 && ksize.height % 2 == 1 in function 'createGaussianKernels'
+
+2025-09-01 20:24:04.074 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 24061787000160
+2025-09-01 20:24:08.000 | ERROR    | __main__:processar_cdt:168 - 24061787000160 → ERRO: error: OpenCV(4.12.0) /io/opencv/modules/imgproc/src/smooth.dispatch.cpp:293: error: (-215:Assertion failed) ksize.width > 0 && ksize.width % 2 == 1 && ksize.height > 0 && ksize.height % 2 == 1 in function 'createGaussianKernels'
+
+2025-09-01 20:24:08.001 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 61745095000167
+2025-09-01 20:24:10.188 | ERROR    | __main__:processar_cdt:168 - 61745095000167 → ERRO: TargetClosedError: Locator.screenshot: Target page, context or browser has been closed
+2025-09-01 20:24:10.190 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 07098574000193
+2025-09-01 20:24:10.192 | ERROR    | __main__:processar_cdt:168 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.193 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 61289975000176
+2025-09-01 20:24:10.196 | ERROR    | __main__:processar_cdt:168 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.197 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 32181064000122
+2025-09-01 20:24:10.199 | ERROR    | __main__:processar_cdt:168 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.201 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 45880695000181
+2025-09-01 20:24:10.204 | ERROR    | __main__:processar_cdt:168 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.205 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 11999645000104
+2025-09-01 20:24:10.207 | ERROR    | __main__:processar_cdt:168 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.209 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 41070149000124
+2025-09-01 20:24:10.211 | ERROR    | __main__:processar_cdt:168 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.212 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 00060631600272
+2025-09-01 20:24:10.215 | ERROR    | __main__:processar_cdt:168 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.216 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 47274662000113
+2025-09-01 20:24:10.219 | ERROR    | __main__:processar_cdt:168 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.221 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 38112365000180
+2025-09-01 20:24:10.223 | ERROR    | __main__:processar_cdt:168 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.224 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 30080700000102
+2025-09-01 20:24:10.226 | ERROR    | __main__:processar_cdt:168 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.228 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 43023281000100
+2025-09-01 20:24:10.230 | ERROR    | __main__:processar_cdt:168 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.231 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 35856232000120
+2025-09-01 20:24:10.234 | ERROR    | __main__:processar_cdt:168 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.235 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 51516274000179
+2025-09-01 20:24:10.237 | ERROR    | __main__:processar_cdt:168 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.239 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 53165195000196
+2025-09-01 20:24:10.241 | ERROR    | __main__:processar_cdt:168 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.242 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 09461099000101
+2025-09-01 20:24:10.244 | ERROR    | __main__:processar_cdt:168 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.249 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 21967775000100
+2025-09-01 20:24:10.250 | ERROR    | __main__:processar_cdt:168 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.252 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 38059475000126
+2025-09-01 20:24:10.254 | ERROR    | __main__:processar_cdt:168 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.255 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 47766186000158
+2025-09-01 20:24:10.257 | ERROR    | __main__:processar_cdt:168 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.258 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 00000863578241
+2025-09-01 20:24:10.260 | ERROR    | __main__:processar_cdt:168 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.261 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 41505475000117
+2025-09-01 20:24:10.264 | ERROR    | __main__:processar_cdt:168 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.265 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 50992729000160
+2025-09-01 20:24:10.267 | ERROR    | __main__:processar_cdt:168 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.268 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 00058886621272
+2025-09-01 20:24:10.269 | ERROR    | __main__:processar_cdt:168 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.271 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 17871432000170
+2025-09-01 20:24:10.272 | ERROR    | __main__:processar_cdt:168 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.274 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 05962437000120
+2025-09-01 20:24:10.275 | ERROR    | __main__:processar_cdt:168 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:24:10.401 | INFO     | __main__:processar_cdt:174 - Processo concluído.
+2025-09-01 20:25:26.565 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:25:27.476 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:25:32.428 | ERROR    | __main__:processar_cdt:168 - 22988817000152 → ERRO: error: OpenCV(4.12.0) /io/opencv/modules/imgproc/src/smooth.dispatch.cpp:293: error: (-215:Assertion failed) ksize.width > 0 && ksize.width % 2 == 1 && ksize.height > 0 && ksize.height % 2 == 1 in function 'createGaussianKernels'
+
+2025-09-01 20:25:32.429 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 24061787000160
+2025-09-01 20:25:36.356 | ERROR    | __main__:processar_cdt:168 - 24061787000160 → ERRO: error: OpenCV(4.12.0) /io/opencv/modules/imgproc/src/smooth.dispatch.cpp:293: error: (-215:Assertion failed) ksize.width > 0 && ksize.width % 2 == 1 && ksize.height > 0 && ksize.height % 2 == 1 in function 'createGaussianKernels'
+
+2025-09-01 20:25:36.357 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 61745095000167
+2025-09-01 20:25:36.370 | ERROR    | __main__:processar_cdt:168 - 61745095000167 → ERRO: Error: Page.goto: net::ERR_ABORTED at https://cndt-certidao.tst.jus.br/gerarCertidao.faces
+Call log:
+  - navigating to "https://cndt-certidao.tst.jus.br/gerarCertidao.faces", waiting until "load"
+
+2025-09-01 20:25:36.372 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 07098574000193
+2025-09-01 20:25:36.378 | ERROR    | __main__:processar_cdt:168 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.380 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 61289975000176
+2025-09-01 20:25:36.383 | ERROR    | __main__:processar_cdt:168 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.385 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 32181064000122
+2025-09-01 20:25:36.387 | ERROR    | __main__:processar_cdt:168 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.389 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 45880695000181
+2025-09-01 20:25:36.392 | ERROR    | __main__:processar_cdt:168 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.393 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 11999645000104
+2025-09-01 20:25:36.396 | ERROR    | __main__:processar_cdt:168 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.397 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 41070149000124
+2025-09-01 20:25:36.399 | ERROR    | __main__:processar_cdt:168 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.401 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 00060631600272
+2025-09-01 20:25:36.403 | ERROR    | __main__:processar_cdt:168 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.405 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 47274662000113
+2025-09-01 20:25:36.407 | ERROR    | __main__:processar_cdt:168 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.408 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 38112365000180
+2025-09-01 20:25:36.410 | ERROR    | __main__:processar_cdt:168 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.411 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 30080700000102
+2025-09-01 20:25:36.412 | ERROR    | __main__:processar_cdt:168 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.413 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 43023281000100
+2025-09-01 20:25:36.415 | ERROR    | __main__:processar_cdt:168 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.416 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 35856232000120
+2025-09-01 20:25:36.417 | ERROR    | __main__:processar_cdt:168 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.418 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 51516274000179
+2025-09-01 20:25:36.420 | ERROR    | __main__:processar_cdt:168 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.420 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 53165195000196
+2025-09-01 20:25:36.422 | ERROR    | __main__:processar_cdt:168 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.423 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 09461099000101
+2025-09-01 20:25:36.424 | ERROR    | __main__:processar_cdt:168 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.425 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 21967775000100
+2025-09-01 20:25:36.426 | ERROR    | __main__:processar_cdt:168 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.427 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 38059475000126
+2025-09-01 20:25:36.428 | ERROR    | __main__:processar_cdt:168 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.430 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 47766186000158
+2025-09-01 20:25:36.431 | ERROR    | __main__:processar_cdt:168 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.435 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 00000863578241
+2025-09-01 20:25:36.436 | ERROR    | __main__:processar_cdt:168 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.437 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 41505475000117
+2025-09-01 20:25:36.439 | ERROR    | __main__:processar_cdt:168 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.440 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 50992729000160
+2025-09-01 20:25:36.442 | ERROR    | __main__:processar_cdt:168 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.443 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 00058886621272
+2025-09-01 20:25:36.444 | ERROR    | __main__:processar_cdt:168 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.445 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 17871432000170
+2025-09-01 20:25:36.447 | ERROR    | __main__:processar_cdt:168 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.448 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 05962437000120
+2025-09-01 20:25:36.449 | ERROR    | __main__:processar_cdt:168 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:25:36.569 | INFO     | __main__:processar_cdt:174 - Processo concluído.
+2025-09-01 20:25:56.944 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:25:57.845 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:26:03.073 | INFO     | __main__:processar_cdt:127 - Captcha lido: 'ReuAae'
+2025-09-01 20:26:21.165 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:26:22.084 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:26:27.289 | INFO     | __main__:processar_cdt:127 - Captcha lido: 'winFOESD'
+2025-09-01 20:29:45.072 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:29:45.977 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:29:51.217 | INFO     | __main__:processar_cdt:127 - Captcha lido: 'fisrpxrO'
+2025-09-01 20:30:33.235 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:30:34.163 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:30:39.341 | INFO     | __main__:processar_cdt:127 - Captcha lido: 'hGafgso'
+2025-09-01 20:31:00.578 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:31:01.455 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:31:06.705 | INFO     | __main__:processar_cdt:127 - Captcha lido: 'Weed'
+2025-09-01 20:31:30.038 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:31:30.943 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:31:36.107 | INFO     | __main__:processar_cdt:127 - Captcha lido: 'LBia6t'
+2025-09-01 20:32:00.699 | INFO     | __main__:processar_cdt:91 - Iniciando automação da aba: CDT
+2025-09-01 20:32:01.578 | INFO     | __main__:processar_cdt:108 - Consultando CNPJ: 22988817000152
+2025-09-01 20:32:06.983 | INFO     | __main__:processar_cdt:127 - Captcha lido: 'dKMPIL'
+2025-09-01 20:36:18.057 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-01 20:36:18.954 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-01 20:36:24.475 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'SaPXvl6'
+2025-09-01 20:36:36.400 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-01 20:36:37.277 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-01 20:36:42.429 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'Cle'
+2025-09-01 20:36:54.308 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-01 20:36:55.232 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-01 20:37:00.423 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'bes'
+2025-09-01 20:51:39.770 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-01 20:51:40.690 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-01 20:51:45.999 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'sac6vpyis'
+2025-09-01 20:52:17.523 | ERROR    | __main__:processar_cdt:182 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-01 20:52:17.524 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 24061787000160
+2025-09-01 20:52:17.528 | ERROR    | __main__:processar_cdt:182 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.529 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61745095000167
+2025-09-01 20:52:17.531 | ERROR    | __main__:processar_cdt:182 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.533 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 07098574000193
+2025-09-01 20:52:17.535 | ERROR    | __main__:processar_cdt:182 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.537 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61289975000176
+2025-09-01 20:52:17.539 | ERROR    | __main__:processar_cdt:182 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.540 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 32181064000122
+2025-09-01 20:52:17.543 | ERROR    | __main__:processar_cdt:182 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.545 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 45880695000181
+2025-09-01 20:52:17.547 | ERROR    | __main__:processar_cdt:182 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.548 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 11999645000104
+2025-09-01 20:52:17.551 | ERROR    | __main__:processar_cdt:182 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.552 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41070149000124
+2025-09-01 20:52:17.555 | ERROR    | __main__:processar_cdt:182 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.557 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00060631600272
+2025-09-01 20:52:17.560 | ERROR    | __main__:processar_cdt:182 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.562 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47274662000113
+2025-09-01 20:52:17.565 | ERROR    | __main__:processar_cdt:182 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.568 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38112365000180
+2025-09-01 20:52:17.571 | ERROR    | __main__:processar_cdt:182 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.574 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 30080700000102
+2025-09-01 20:52:17.577 | ERROR    | __main__:processar_cdt:182 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.579 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 43023281000100
+2025-09-01 20:52:17.582 | ERROR    | __main__:processar_cdt:182 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.585 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 35856232000120
+2025-09-01 20:52:17.588 | ERROR    | __main__:processar_cdt:182 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.590 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 51516274000179
+2025-09-01 20:52:17.593 | ERROR    | __main__:processar_cdt:182 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.596 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 53165195000196
+2025-09-01 20:52:17.599 | ERROR    | __main__:processar_cdt:182 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.602 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 09461099000101
+2025-09-01 20:52:17.604 | ERROR    | __main__:processar_cdt:182 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.607 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 21967775000100
+2025-09-01 20:52:17.609 | ERROR    | __main__:processar_cdt:182 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.611 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38059475000126
+2025-09-01 20:52:17.613 | ERROR    | __main__:processar_cdt:182 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.614 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47766186000158
+2025-09-01 20:52:17.616 | ERROR    | __main__:processar_cdt:182 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.617 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00000863578241
+2025-09-01 20:52:17.619 | ERROR    | __main__:processar_cdt:182 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.621 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41505475000117
+2025-09-01 20:52:17.622 | ERROR    | __main__:processar_cdt:182 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.624 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 50992729000160
+2025-09-01 20:52:17.625 | ERROR    | __main__:processar_cdt:182 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.627 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00058886621272
+2025-09-01 20:52:17.628 | ERROR    | __main__:processar_cdt:182 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.629 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 17871432000170
+2025-09-01 20:52:17.631 | ERROR    | __main__:processar_cdt:182 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.632 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 05962437000120
+2025-09-01 20:52:17.634 | ERROR    | __main__:processar_cdt:182 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-01 20:52:17.747 | INFO     | __main__:processar_cdt:188 - Processo concluído.
+2025-09-03 17:12:55.881 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-03 17:12:57.300 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-03 17:13:02.528 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'tSOLHG'
+2025-09-03 17:13:34.077 | ERROR    | __main__:processar_cdt:182 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-03 17:13:34.078 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 24061787000160
+2025-09-03 17:13:34.081 | ERROR    | __main__:processar_cdt:182 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.083 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61745095000167
+2025-09-03 17:13:34.085 | ERROR    | __main__:processar_cdt:182 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.087 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 07098574000193
+2025-09-03 17:13:34.089 | ERROR    | __main__:processar_cdt:182 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.090 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61289975000176
+2025-09-03 17:13:34.092 | ERROR    | __main__:processar_cdt:182 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.094 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 32181064000122
+2025-09-03 17:13:34.097 | ERROR    | __main__:processar_cdt:182 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.098 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 45880695000181
+2025-09-03 17:13:34.100 | ERROR    | __main__:processar_cdt:182 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.102 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 11999645000104
+2025-09-03 17:13:34.104 | ERROR    | __main__:processar_cdt:182 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.106 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41070149000124
+2025-09-03 17:13:34.108 | ERROR    | __main__:processar_cdt:182 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.109 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00060631600272
+2025-09-03 17:13:34.111 | ERROR    | __main__:processar_cdt:182 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.113 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47274662000113
+2025-09-03 17:13:34.115 | ERROR    | __main__:processar_cdt:182 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.116 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38112365000180
+2025-09-03 17:13:34.118 | ERROR    | __main__:processar_cdt:182 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.120 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 30080700000102
+2025-09-03 17:13:34.122 | ERROR    | __main__:processar_cdt:182 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.123 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 43023281000100
+2025-09-03 17:13:34.125 | ERROR    | __main__:processar_cdt:182 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.127 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 35856232000120
+2025-09-03 17:13:34.129 | ERROR    | __main__:processar_cdt:182 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.132 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 51516274000179
+2025-09-03 17:13:34.134 | ERROR    | __main__:processar_cdt:182 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.136 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 53165195000196
+2025-09-03 17:13:34.139 | ERROR    | __main__:processar_cdt:182 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.141 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 09461099000101
+2025-09-03 17:13:34.144 | ERROR    | __main__:processar_cdt:182 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.145 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 21967775000100
+2025-09-03 17:13:34.147 | ERROR    | __main__:processar_cdt:182 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.149 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38059475000126
+2025-09-03 17:13:34.151 | ERROR    | __main__:processar_cdt:182 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.153 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47766186000158
+2025-09-03 17:13:34.156 | ERROR    | __main__:processar_cdt:182 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.157 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00000863578241
+2025-09-03 17:13:34.159 | ERROR    | __main__:processar_cdt:182 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.161 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41505475000117
+2025-09-03 17:13:34.163 | ERROR    | __main__:processar_cdt:182 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.164 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 50992729000160
+2025-09-03 17:13:34.166 | ERROR    | __main__:processar_cdt:182 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.169 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00058886621272
+2025-09-03 17:13:34.171 | ERROR    | __main__:processar_cdt:182 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.172 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 17871432000170
+2025-09-03 17:13:34.175 | ERROR    | __main__:processar_cdt:182 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.176 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 05962437000120
+2025-09-03 17:13:34.179 | ERROR    | __main__:processar_cdt:182 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 17:13:34.303 | INFO     | __main__:processar_cdt:188 - Processo concluído.
+2025-09-03 19:22:59.620 | INFO     | __main__:processar_cdt:105 - Iniciando automação da aba: CDT
+2025-09-03 19:23:00.513 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 22988817000152
+2025-09-03 19:23:05.797 | INFO     | __main__:processar_cdt:141 - Captcha lido: 'WF5yobk'
+2025-09-03 19:23:37.343 | ERROR    | __main__:processar_cdt:182 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-03 19:23:37.344 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 24061787000160
+2025-09-03 19:23:37.348 | ERROR    | __main__:processar_cdt:182 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.349 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61745095000167
+2025-09-03 19:23:37.351 | ERROR    | __main__:processar_cdt:182 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.353 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 07098574000193
+2025-09-03 19:23:37.355 | ERROR    | __main__:processar_cdt:182 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.357 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 61289975000176
+2025-09-03 19:23:37.359 | ERROR    | __main__:processar_cdt:182 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.360 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 32181064000122
+2025-09-03 19:23:37.363 | ERROR    | __main__:processar_cdt:182 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.365 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 45880695000181
+2025-09-03 19:23:37.369 | ERROR    | __main__:processar_cdt:182 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.371 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 11999645000104
+2025-09-03 19:23:37.374 | ERROR    | __main__:processar_cdt:182 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.377 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41070149000124
+2025-09-03 19:23:37.380 | ERROR    | __main__:processar_cdt:182 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.382 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00060631600272
+2025-09-03 19:23:37.385 | ERROR    | __main__:processar_cdt:182 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.388 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47274662000113
+2025-09-03 19:23:37.391 | ERROR    | __main__:processar_cdt:182 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.393 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38112365000180
+2025-09-03 19:23:37.396 | ERROR    | __main__:processar_cdt:182 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.399 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 30080700000102
+2025-09-03 19:23:37.401 | ERROR    | __main__:processar_cdt:182 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.403 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 43023281000100
+2025-09-03 19:23:37.405 | ERROR    | __main__:processar_cdt:182 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.406 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 35856232000120
+2025-09-03 19:23:37.408 | ERROR    | __main__:processar_cdt:182 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.410 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 51516274000179
+2025-09-03 19:23:37.412 | ERROR    | __main__:processar_cdt:182 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.413 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 53165195000196
+2025-09-03 19:23:37.416 | ERROR    | __main__:processar_cdt:182 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.417 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 09461099000101
+2025-09-03 19:23:37.419 | ERROR    | __main__:processar_cdt:182 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.421 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 21967775000100
+2025-09-03 19:23:37.424 | ERROR    | __main__:processar_cdt:182 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.426 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 38059475000126
+2025-09-03 19:23:37.428 | ERROR    | __main__:processar_cdt:182 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.429 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 47766186000158
+2025-09-03 19:23:37.432 | ERROR    | __main__:processar_cdt:182 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.433 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00000863578241
+2025-09-03 19:23:37.435 | ERROR    | __main__:processar_cdt:182 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.436 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 41505475000117
+2025-09-03 19:23:37.438 | ERROR    | __main__:processar_cdt:182 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.439 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 50992729000160
+2025-09-03 19:23:37.441 | ERROR    | __main__:processar_cdt:182 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.443 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 00058886621272
+2025-09-03 19:23:37.445 | ERROR    | __main__:processar_cdt:182 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.447 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 17871432000170
+2025-09-03 19:23:37.449 | ERROR    | __main__:processar_cdt:182 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.451 | INFO     | __main__:processar_cdt:122 - Consultando CNPJ: 05962437000120
+2025-09-03 19:23:37.454 | ERROR    | __main__:processar_cdt:182 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:23:37.584 | INFO     | __main__:processar_cdt:188 - Processo concluído.
+2025-09-03 19:26:35.661 | INFO     | __main__:processar_cdt:101 - Iniciando automação da aba: CDT
+2025-09-03 19:26:36.512 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 22988817000152
+2025-09-03 19:26:41.674 | INFO     | __main__:processar_cdt:137 - Captcha lido: 'Captchaparapermitiraconsulta'
+2025-09-03 19:27:13.216 | ERROR    | __main__:processar_cdt:178 - 22988817000152 → ERRO: TimeoutError: Timeout 30000ms exceeded while waiting for event "page"
+2025-09-03 19:27:13.218 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 24061787000160
+2025-09-03 19:27:13.221 | ERROR    | __main__:processar_cdt:178 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.222 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 61745095000167
+2025-09-03 19:27:13.225 | ERROR    | __main__:processar_cdt:178 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.226 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 07098574000193
+2025-09-03 19:27:13.229 | ERROR    | __main__:processar_cdt:178 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.230 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 61289975000176
+2025-09-03 19:27:13.233 | ERROR    | __main__:processar_cdt:178 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.235 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 32181064000122
+2025-09-03 19:27:13.238 | ERROR    | __main__:processar_cdt:178 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.240 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 45880695000181
+2025-09-03 19:27:13.242 | ERROR    | __main__:processar_cdt:178 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.244 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 11999645000104
+2025-09-03 19:27:13.246 | ERROR    | __main__:processar_cdt:178 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.248 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 41070149000124
+2025-09-03 19:27:13.251 | ERROR    | __main__:processar_cdt:178 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.253 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 00060631600272
+2025-09-03 19:27:13.255 | ERROR    | __main__:processar_cdt:178 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.257 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 47274662000113
+2025-09-03 19:27:13.259 | ERROR    | __main__:processar_cdt:178 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.261 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 38112365000180
+2025-09-03 19:27:13.263 | ERROR    | __main__:processar_cdt:178 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.264 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 30080700000102
+2025-09-03 19:27:13.267 | ERROR    | __main__:processar_cdt:178 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.268 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 43023281000100
+2025-09-03 19:27:13.270 | ERROR    | __main__:processar_cdt:178 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.272 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 35856232000120
+2025-09-03 19:27:13.274 | ERROR    | __main__:processar_cdt:178 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.276 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 51516274000179
+2025-09-03 19:27:13.278 | ERROR    | __main__:processar_cdt:178 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.280 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 53165195000196
+2025-09-03 19:27:13.283 | ERROR    | __main__:processar_cdt:178 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.284 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 09461099000101
+2025-09-03 19:27:13.286 | ERROR    | __main__:processar_cdt:178 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.288 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 21967775000100
+2025-09-03 19:27:13.290 | ERROR    | __main__:processar_cdt:178 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.291 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 38059475000126
+2025-09-03 19:27:13.293 | ERROR    | __main__:processar_cdt:178 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.294 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 47766186000158
+2025-09-03 19:27:13.296 | ERROR    | __main__:processar_cdt:178 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.297 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 00000863578241
+2025-09-03 19:27:13.299 | ERROR    | __main__:processar_cdt:178 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.300 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 41505475000117
+2025-09-03 19:27:13.302 | ERROR    | __main__:processar_cdt:178 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.303 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 50992729000160
+2025-09-03 19:27:13.304 | ERROR    | __main__:processar_cdt:178 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.305 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 00058886621272
+2025-09-03 19:27:13.307 | ERROR    | __main__:processar_cdt:178 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.308 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 17871432000170
+2025-09-03 19:27:13.310 | ERROR    | __main__:processar_cdt:178 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.311 | INFO     | __main__:processar_cdt:118 - Consultando CNPJ: 05962437000120
+2025-09-03 19:27:13.313 | ERROR    | __main__:processar_cdt:178 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:27:13.435 | INFO     | __main__:processar_cdt:184 - Processo concluído.
+2025-09-03 19:31:21.536 | INFO     | __main__:processar_cdt:335 - Iniciando automação da aba: CDT
+2025-09-03 19:31:22.428 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 22988817000152
+2025-09-03 19:31:38.191 | ERROR    | __main__:processar_cdt:414 - 22988817000152 → ERRO: TargetClosedError: Locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("input[name='formConsultaCertidao:numeroDocumento']")
+
+2025-09-03 19:31:38.193 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 24061787000160
+2025-09-03 19:31:38.196 | ERROR    | __main__:processar_cdt:414 - 24061787000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.197 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 61745095000167
+2025-09-03 19:31:38.199 | ERROR    | __main__:processar_cdt:414 - 61745095000167 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.201 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 07098574000193
+2025-09-03 19:31:38.204 | ERROR    | __main__:processar_cdt:414 - 07098574000193 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.205 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 61289975000176
+2025-09-03 19:31:38.208 | ERROR    | __main__:processar_cdt:414 - 61289975000176 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.210 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 32181064000122
+2025-09-03 19:31:38.213 | ERROR    | __main__:processar_cdt:414 - 32181064000122 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.215 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 45880695000181
+2025-09-03 19:31:38.217 | ERROR    | __main__:processar_cdt:414 - 45880695000181 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.219 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 11999645000104
+2025-09-03 19:31:38.222 | ERROR    | __main__:processar_cdt:414 - 11999645000104 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.224 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 41070149000124
+2025-09-03 19:31:38.226 | ERROR    | __main__:processar_cdt:414 - 41070149000124 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.227 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 00060631600272
+2025-09-03 19:31:38.230 | ERROR    | __main__:processar_cdt:414 - 00060631600272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.232 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 47274662000113
+2025-09-03 19:31:38.234 | ERROR    | __main__:processar_cdt:414 - 47274662000113 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.236 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 38112365000180
+2025-09-03 19:31:38.238 | ERROR    | __main__:processar_cdt:414 - 38112365000180 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.239 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 30080700000102
+2025-09-03 19:31:38.242 | ERROR    | __main__:processar_cdt:414 - 30080700000102 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.243 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 43023281000100
+2025-09-03 19:31:38.246 | ERROR    | __main__:processar_cdt:414 - 43023281000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.247 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 35856232000120
+2025-09-03 19:31:38.250 | ERROR    | __main__:processar_cdt:414 - 35856232000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.252 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 51516274000179
+2025-09-03 19:31:38.254 | ERROR    | __main__:processar_cdt:414 - 51516274000179 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.256 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 53165195000196
+2025-09-03 19:31:38.258 | ERROR    | __main__:processar_cdt:414 - 53165195000196 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.260 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 09461099000101
+2025-09-03 19:31:38.263 | ERROR    | __main__:processar_cdt:414 - 09461099000101 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.265 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 21967775000100
+2025-09-03 19:31:38.268 | ERROR    | __main__:processar_cdt:414 - 21967775000100 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.270 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 38059475000126
+2025-09-03 19:31:38.272 | ERROR    | __main__:processar_cdt:414 - 38059475000126 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.274 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 47766186000158
+2025-09-03 19:31:38.276 | ERROR    | __main__:processar_cdt:414 - 47766186000158 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.278 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 00000863578241
+2025-09-03 19:31:38.280 | ERROR    | __main__:processar_cdt:414 - 00000863578241 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.281 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 41505475000117
+2025-09-03 19:31:38.283 | ERROR    | __main__:processar_cdt:414 - 41505475000117 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.285 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 50992729000160
+2025-09-03 19:31:38.287 | ERROR    | __main__:processar_cdt:414 - 50992729000160 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.289 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 00058886621272
+2025-09-03 19:31:38.291 | ERROR    | __main__:processar_cdt:414 - 00058886621272 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.292 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 17871432000170
+2025-09-03 19:31:38.294 | ERROR    | __main__:processar_cdt:414 - 17871432000170 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.295 | INFO     | __main__:processar_cdt:352 - Consultando CNPJ: 05962437000120
+2025-09-03 19:31:38.297 | ERROR    | __main__:processar_cdt:414 - 05962437000120 → ERRO: TargetClosedError: Page.goto: Target page, context or browser has been closed
+2025-09-03 19:31:38.423 | INFO     | __main__:processar_cdt:420 - Processo concluído.
