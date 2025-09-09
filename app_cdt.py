@@ -1,13 +1,10 @@
 import re
 import time
+import base64
 import traceback
 from datetime import datetime
 from pathlib import Path
-from PIL import Image
-import pytesseract
-import time
-import cv2
-import numpy as np
+import requests
 
 import pandas as pd
 import fitz  # PyMuPDF
@@ -24,11 +21,23 @@ COL_RAZAO = "RAZÃO SOCIAL"
 OUTPUT_DIR = Path("certidoes_baixadas") / ABA.replace(" ", "_")
 URL_CDT = "https://cndt-certidao.tst.jus.br/gerarCertidao.faces"
 TIMEOUT = 40_000
-REGEX_VALIDADE = r"VÁLIDA ATÉ:\s*(\d{2}/\d{2}/\d{4})"
+REGEX_VALIDADE = r"Validade:\s*(\d{2}/\d{2}/\d{4})"
+API_KEY_2CAPTCHA = "30924a201f06a3b554d7479c487fee8e"  
+MAX_TENTATIVAS_CNPJ = 6
+HEADLESS = False
+POLLING_2CAPTCHA_SEG = 5
+MAX_POLLS_2CAPTCHA = 50  
 
-# === Funções utilitárias ===
-def normalizar_cnpj(cnpj: str) -> str:
-    return re.sub(r"\D", "", str(cnpj)).zfill(14)
+# === Utilitários ===
+def normalizar_cnpj(doc: str) -> str:
+    """
+    Remove caracteres não numéricos e retorna o documento com padding apenas se for CNPJ.
+    CPF (11 dígitos) permanece como está. 
+    """
+    numeros = re.sub(r"\D", "", str(doc))
+    if len(numeros) in [11, 14]:
+        return numeros
+    raise ValueError(f"Documento inválido: {doc} → {numeros}")
 
 def extrair_validade_pdf(caminho_pdf: Path) -> str:
     try:
@@ -41,6 +50,7 @@ def extrair_validade_pdf(caminho_pdf: Path) -> str:
         logger.warning(f"Erro ao ler validade do PDF {caminho_pdf.name}: {e}")
     return ""
 
+
 def salvar_valor_na_planilha(cnpj: str, nova_data: str, caminho: Path, aba: str):
     wb = load_workbook(caminho)
     ws = wb[aba]
@@ -49,7 +59,7 @@ def salvar_valor_na_planilha(cnpj: str, nova_data: str, caminho: Path, aba: str)
     idx_validade = colunas.get(COL_VALIDADE)
 
     if not idx_cnpj or not idx_validade:
-        logger.error("Coluna CNPJ ou VALIDADE CERTIDAO não encontrada.")
+        logger.error("Coluna CNPJ ou VALIDADE CERTIDÃO não encontrada.")
         return
 
     for row in ws.iter_rows(min_row=2):
@@ -61,41 +71,81 @@ def salvar_valor_na_planilha(cnpj: str, nova_data: str, caminho: Path, aba: str)
     wb.save(caminho)
     wb.close()
 
-def carregar_imagem_com_checagem(caminho_imagem: Path) -> np.ndarray:
-    if not caminho_imagem.exists():
-        raise FileNotFoundError(f"Imagem não encontrada: {caminho_imagem}")
-    
-    img = cv2.imread(str(caminho_imagem), cv2.IMREAD_COLOR)
+# === 2Captcha (image captcha) ===
+def resolver_captcha_2captcha(caminho_imagem: Path, api_key: str) -> str:
+    with open(caminho_imagem, "rb") as f:
+        b64 = base64.b64encode(f.read()).decode("utf-8")
 
-    if img is None or img.size == 0:
-        raise ValueError(f"Falha ao carregar imagem: {caminho_imagem}")
-    
-    return img
+    payload = {
+        "key": api_key,
+        "method": "base64",
+        "body": b64,
+        "json": 1,
+    }
+    resp = requests.post("http://2captcha.com/in.php", data=payload, timeout=40)
+    resp.raise_for_status()
+    data = resp.json()
+    if data.get("status") != 1:
+        raise RuntimeError(f"Falha ao enfileirar captcha: {data}")
 
-def preprocessar_imagem_para_ocr(caminho_imagem: Path) -> Image:
-    img = carregar_imagem_com_checagem(caminho_imagem)
+    captcha_id = data["request"]
 
-    # Aumenta escala da imagem
-    scale_percent = 250
-    width = int(img.shape[1] * scale_percent / 100)
-    height = int(img.shape[0] * scale_percent / 100)
-    img = cv2.resize(img, (width, height), interpolation=cv2.INTER_LINEAR)
+    # Polling de resultado
+    for _ in range(MAX_POLLS_2CAPTCHA):
+        time.sleep(POLLING_2CAPTCHA_SEG)
+        res = requests.get(
+            "http://2captcha.com/res.php",
+            params={"key": api_key, "action": "get", "id": captcha_id, "json": 1},
+            timeout=40,
+        )
+        res.raise_for_status()
+        ans = res.json()
+        if ans.get("status") == 1:
+            return ans["request"].strip()
+        # Se não estiver pronto e não for CAPCHA_NOT_READY, trate como erro
+        if ans.get("request") != "CAPCHA_NOT_READY":
+            raise RuntimeError(f"Erro do 2Captcha: {ans}")
 
-    # Converte para escala de cinza
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    raise TimeoutError("Timeout aguardando solução do 2Captcha")
 
-    # Aplica leve desfoque
-    blur = cv2.GaussianBlur(gray, (3, 3), 0)
 
-    # Aplica binarização adaptativa
-    binarizada = cv2.adaptiveThreshold(
-        blur, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-        cv2.THRESH_BINARY, 11, 2
-    )
+# === Baixa a certidão (download ou nova aba) ===
+def tentar_baixar_certidao(page, contexto, cnpj_limpo: str) -> Path | None:
+    temp_path = OUTPUT_DIR / f"temp_{cnpj_limpo}.pdf"
 
-    # Converte para PIL e retorna
-    return Image.fromarray(binarizada)
+    # 1) Tenta evento de download direto
+    try:
+        with page.expect_download(timeout=15000) as dl_info:
+            page.get_by_role("button", name=re.compile("Emitir Certid[aã]o", re.I)).click()
+        download = dl_info.value
+        download.save_as(str(temp_path))
+        return temp_path
+    except PWTimeout:
+        pass
+    except Exception as e:
+        logger.debug(f"Download direto falhou: {e}")
 
+    # 2) Tenta nova aba + page.pdf (Chromium headless)
+    try:
+        with contexto.expect_page() as nova_aba_evento:
+            page.get_by_role("button", name=re.compile("Emitir Certid[aã]o", re.I)).click()
+        nova_aba = nova_aba_evento.value
+        nova_aba.wait_for_load_state("networkidle", timeout=20000)
+        try:
+            nova_aba.pdf(path=str(temp_path), format="A4")
+            nova_aba.close()
+            return temp_path
+        except Exception as e:
+            logger.debug(f"pdf() falhou: {e}")
+            evid = OUTPUT_DIR / f"screenshot_{cnpj_limpo}.png"
+            nova_aba.screenshot(path=str(evid), full_page=True)
+            nova_aba.close()
+            return None
+    except PWTimeout:
+        return None
+
+
+# === Fluxo principal ===
 def processar_cdt():
     logger.add("execucaocdt.log", rotation="1 MB")
     logger.info(f"Iniciando automação da aba: {ABA}")
@@ -106,82 +156,99 @@ def processar_cdt():
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    if not API_KEY_2CAPTCHA or API_KEY_2CAPTCHA == "COLOQUE_SUA_CHAVE_AQUI":
+        logger.error("Defina API_KEY_2CAPTCHA (variável de ambiente ou no código) antes de executar.")
+        return
+
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        context = browser.new_context()
-        page = context.new_page()
+        browser = p.chromium.launch(headless=HEADLESS)
+        context = browser.new_context(accept_downloads=True)
+        page = context.new_page()            
 
         for cnpj in cnpjs:
             cnpj_limpo = normalizar_cnpj(cnpj)
+            tentativas = 0
 
-            try:
-                logger.info(f"Consultando CNPJ: {cnpj_limpo}")
-                page.goto(URL_CDT, timeout=TIMEOUT)
-                page.wait_for_load_state("domcontentloaded", timeout=10000)
+            while tentativas < MAX_TENTATIVAS_CNPJ:
+                tentativas += 1
+                try:
+                    logger.info(f"Consultando CNPJ: {cnpj_limpo} (tentativa {tentativas}/{MAX_TENTATIVAS_CNPJ})")
+                    page.goto(URL_CDT, timeout=TIMEOUT)
+                    page.wait_for_load_state("domcontentloaded", timeout=10000)
 
-                # Preenche o CNPJ
-                page.get_by_role("textbox", name="Registro no Cadastro Nacional").fill(cnpj_limpo)
+                    # Preenche o CNPJ (campo: "Registro no Cadastro Nacional...")
+                    page.get_by_role("textbox", name=re.compile("Cadastro Nacional|CNPJ", re.I)).fill(cnpj_limpo)
 
-                time.sleep(2)  # espera para o captcha carregar corretamente
+                    # Aguarda o captcha renderizar
+                    time.sleep(1.5)
 
-                # Captura o captcha
-                captcha_img = page.get_by_role("img", name="Captcha para permitir a")
-                captcha_path = OUTPUT_DIR / f"captcha_{cnpj_limpo}.png"
-                captcha_img.screenshot(path=str(captcha_path))
+                    # Captura a imagem do captcha
+                    captcha_img = page.get_by_role("img", name=re.compile("Captcha", re.I)).first
+                    captcha_path = OUTPUT_DIR / f"captcha_{cnpj_limpo}.png"
+                    captcha_img.screenshot(path=str(captcha_path))
 
-                time.sleep(1.5)  # pequena espera para garantir que a imagem foi salva
+                    # Resolve com 2Captcha (image captcha)
+                    texto_captcha = resolver_captcha_2captcha(captcha_path, API_KEY_2CAPTCHA)
+                    logger.info(f"2Captcha → '{texto_captcha}'")
 
-                # Resolve o captcha com pytesseract
-                imagem = preprocessar_imagem_para_ocr(captcha_path)
-                texto_captcha = pytesseract.image_to_string(imagem, config='--psm 8 -c tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789').strip()
-                logger.info(f"Captcha lido: '{texto_captcha}'")
+                    # Preenche o captcha
+                    page.get_by_role("textbox", name=re.compile("Digite os caracteres|Captcha|caracteres exibidos", re.I)).fill(texto_captcha)
+                    time.sleep(0.6)
 
-                # Preenche o captcha
-                page.get_by_role("textbox", name="* Digite os caracteres").fill(texto_captcha)
+                    # Tenta emitir e obter o PDF
+                    temp_pdf = tentar_baixar_certidao(page, context, cnpj_limpo)
 
-                time.sleep(1.5)  # garante que o campo foi preenchido
+                    if temp_pdf is None:
+                        # Heurística: se há mensagem de erro de captcha, recarrega e tenta novamente
+                        try:
+                            erro_visivel = page.locator(
+                                "text=/inv[aá]lido|c[oó]digo incorreto|captcha|caracteres/i"
+                            ).first.is_visible(timeout=1000)
+                        except Exception:
+                            erro_visivel = False
 
-                # Clica no botão "Emitir Certidão"
-                with context.expect_page() as nova_aba_evento:
-                    page.get_by_role("button", name="Emitir Certidão").click()
+                        if erro_visivel:
+                            logger.warning("Captcha inválido/erro detectado. Recarregando captcha…")
+                            try:
+                                captcha_img.click()  # muitos sites recarregam a imagem ao clicar
+                            except Exception:
+                                pass
+                            time.sleep(1.2)
+                            continue  # próxima tentativa
 
-                nova_aba = nova_aba_evento.value
-                nova_aba.wait_for_load_state("networkidle", timeout=15000)
+                        logger.warning("Sem PDF nem erro claro; tentando novamente…")
+                        continue
 
-                # Salva o PDF da nova aba
-                temp_path = OUTPUT_DIR / f"temp_{cnpj_limpo}.pdf"
-                nova_aba.pdf(path=str(temp_path), format="A4")
+                    # Se chegou aqui, temos PDF → extrai validade e salva
+                    validade = extrair_validade_pdf(temp_pdf)
+                    if validade:
+                        salvar_valor_na_planilha(cnpj_limpo, validade, PLANILHA, ABA)
+                        validade_formatada = datetime.strptime(validade, "%d/%m/%Y").strftime("%Y%m%d")
+                        destino_pdf = OUTPUT_DIR / f"cdt_{cnpj_limpo}_{validade_formatada}.pdf"
+                        temp_pdf.replace(destino_pdf)
+                        logger.success(f"{cnpj_limpo} → Sucesso: validade {validade}")
+                    else:
+                        destino_pdf = OUTPUT_DIR / f"erro_{cnpj_limpo}.pdf"
+                        temp_pdf.replace(destino_pdf)
+                        logger.warning(f"{cnpj_limpo} → PDF salvo, mas não foi possível extrair validade.")
 
-                # Salva print da nova aba
-                screenshot_path = OUTPUT_DIR / f"screenshot_{cnpj_limpo}.png"
-                nova_aba.screenshot(path=str(screenshot_path), full_page=True)
+                    # Sucesso → sair do loop de tentativas
+                    break
 
-                validade = extrair_validade_pdf(temp_path)
+                except Exception as e:
+                    motivo = f"{type(e).__name__}: {e}"
+                    logger.error(f"{cnpj_limpo} → ERRO: {motivo}")
+                    traceback.print_exc()
+                    # Loop continua até atingir o MAX_TENTATIVAS_CNPJ
 
-                if validade:
-                    salvar_valor_na_planilha(cnpj_limpo, validade, PLANILHA, ABA)
-                    validade_formatada = datetime.strptime(validade, "%d/%m/%Y").strftime("%Y%m%d")
-                    nome_arquivo = f"cdt_{cnpj_limpo}_{validade_formatada}.pdf"
-                    destino_pdf = OUTPUT_DIR / nome_arquivo
-                    temp_path.rename(destino_pdf)
-                    logger.success(f"{cnpj_limpo} → Sucesso: validade {validade}")
-                else:
-                    destino_pdf = OUTPUT_DIR / f"erro_{cnpj_limpo}.pdf"
-                    temp_path.rename(destino_pdf)
-                    logger.warning(f"{cnpj_limpo} → Não foi possível extrair validade.")
-
-                nova_aba.close()
-                page.bring_to_front()
-
-            except Exception as e:
-                motivo = f"{type(e).__name__}: {e}"
-                logger.error(f"{cnpj_limpo} → ERRO: {motivo}")
-                traceback.print_exc()
+            else:
+                logger.error(f"{cnpj_limpo} → Excedeu o número máximo de tentativas.")
 
         context.close()
         browser.close()
 
     logger.info("Processo concluído.")
+
 
 # === Execução ===
 if __name__ == "__main__":
