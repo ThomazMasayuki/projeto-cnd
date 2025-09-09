@@ -27,10 +27,10 @@ TIMEOUT = 40_000
 REGEX_VALIDADE_FINAL = r"Validade:\s*\d{2}/\d{2}/\d{4}\s*a\s*(\d{2}/\d{2}/\d{4})"
 
 API_KEY_2CAPTCHA = os.getenv("API_KEY_2CAPTCHA", "30924a201f06a3b554d7479c487fee8e")
-POLLING_2CAPTCHA_SEG = 5
+POLLING_2CAPTCHA_SEG = 2
 MAX_POLLS_2CAPTCHA = 50 
 MAX_TENTATIVAS_CNPJ = 6
-HEADLESS = False        
+HEADLESS = True        
 
 # =====================
 # Utilitários planilha (openpyxl)
@@ -216,7 +216,7 @@ def processar_crf():
                     try:
                         campo.click()
                         campo.fill("")
-                        campo.type(cnpj_limpo, delay=30)
+                        campo.fill(cnpj_limpo)
                         campo.press("Tab")
                     except Exception as e:
                         logger.debug(f"Falha ao digitar no campo Inscrição: {e}")
@@ -244,7 +244,7 @@ def processar_crf():
                             logger.warning(f"Fallback JS para Inscrição falhou: {e}")
 
                     # --- Captura e resolve o captcha (2Captcha image) ---
-                    time.sleep(1.5)
+                    time.sleep(0.3)
                     captcha_img = page.locator("img[alt*='captcha' i], img[src*='captcha']").first
                     captcha_path = OUTPUT_DIR / f"captcha_{cnpj_limpo}.png"
                     captcha_img.screenshot(path=str(captcha_path))
@@ -260,7 +260,7 @@ def processar_crf():
                     try:
                         cap.click()
                         cap.fill("")
-                        cap.type(texto_captcha, delay=20)
+                        cap.fill(texto_captcha)
                         cap.press("Tab")
                     except Exception as e:
                         logger.debug(f"Falha ao digitar no captcha: {e}")
