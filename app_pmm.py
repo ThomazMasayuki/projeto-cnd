@@ -236,7 +236,7 @@ def processar_pmm():
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
-        context = browser.new_context()
+        context = browser.new_context(viewport={"width": 1920, "height": 1080})
         page = context.new_page()
 
         for cnpj in cnpjs:
@@ -266,22 +266,43 @@ def processar_pmm():
                 # Preenche o captcha no campo correto
                 preencher_captcha(fr, texto_captcha)
 
-                # Clica no botão Consultar e aguarda a nova aba abrir
-                try:
-                    with context.expect_page(timeout=30000) as nova_pagina_evento:
-                        page.eval_on_selector("input[name='BTNCONSULTAR']", "el => el.click()")
+                fr = _first_frame_with(page, "input[name='BTNCONSULTAR']")
+                if not fr:
+                    raise RuntimeError("[Botão] Não foi possível encontrar o frame com o botão 'Consultar'.")
 
+                try:
+                    fr.wait_for_selector("input[name='BTNCONSULTAR']", timeout=10000)
+
+                    time.sleep(1)  
+                    with context.expect_page(timeout=150000) as nova_pagina_evento:
+                        fr.eval_on_selector("input[name='BTNCONSULTAR']", "el => el.click()")
+
+                    time.sleep(5)  
                     nova_aba = nova_pagina_evento.value
-                    time.sleep(5)
-                    nova_aba.wait_for_load_state("networkidle", timeout=30000)
+                    nova_aba.wait_for_load_state("networkidle", timeout=150000)
                     logger.info(f"[Nova aba] Página carregada com sucesso: {nova_aba.url}")
 
                 except PWTimeout:
                     raise RuntimeError("[Erro] A nova aba não foi aberta após clicar em 'Consultar' dentro de 30 segundos.")
 
+
                 # Exporta o PDF e extrai validade
-                temp_path = OUTPUT_DIR / f"temp_{cnpj_limpo}.pdf"
-                nova_aba.pdf(path=str(temp_path), format="A4")
+                # Verifica se a certidão não foi emitida por motivo de débito/restrição
+                try:
+                    alerta = nova_aba.locator("div.alert.alert-warning").text_content(timeout=5000)
+                    if alerta and "não foi possível emitir a certidão" in alerta.lower():
+                        salvar_valor_na_planilha(cnpj_limpo, "COM DÉBITO", PLANILHA, ABA)
+                        logger.warning(f"{cnpj_limpo} → Certidão com débito detectada.")
+
+                        # Salva a tela como evidência em PDF
+                        temp_path = OUTPUT_DIR / f"pmm_{cnpj_limpo}_com_debito.pdf"
+                        nova_aba.pdf(path=str(temp_path), format="A4")
+
+                        nova_aba.close()
+                        continue  # pula para o próximo CNPJ
+                except Exception as e:
+                    logger.debug(f"[Alerta] Nenhum alerta de débito encontrado: {e}")
+
 
                 validade = extrair_validade_pdf(temp_path)
                 if validade:
