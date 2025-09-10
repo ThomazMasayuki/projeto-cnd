@@ -1,18 +1,17 @@
 import re
 import time
+import base64
 import traceback
 from datetime import datetime
 from pathlib import Path
-from PIL import Image
-import pytesseract
-import cv2
-import numpy as np
+import requests
 
 import pandas as pd
-import fitz  # PyMuPDF
+import fitz  
 from loguru import logger
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 from openpyxl import load_workbook
+from uuid import uuid4
 
 # === Configurações ===
 PLANILHA = Path("base_certidoes.xlsx")
@@ -23,7 +22,8 @@ COL_RAZAO = "RAZÃO SOCIAL"
 OUTPUT_DIR = Path("certidoes_baixadas") / ABA.replace(" ", "_")
 URL_PMM = "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1412"
 TIMEOUT = 40_000
-REGEX_VALIDADE = r"VÁLIDA ATÉ:\s*(\d{2}/\d{2}/\d{4})"
+REGEX_VALIDADE = r"VÁLIDA ATÉ \s*(\d{2}/\d{2}/\d{4})"
+API_KEY_2CAPTCHA = "30924a201f06a3b554d7479c487fee8e"
 
 # === Funções utilitárias ===
 def normalizar_cnpj(cnpj: str) -> str:
@@ -59,10 +59,29 @@ def salvar_valor_na_planilha(cnpj: str, nova_data: str, caminho: Path, aba: str)
 
     wb.save(caminho)
     wb.close()
-    
-# === Helpers robustos para GeneXus / radios / iframes ===
-from playwright.sync_api import TimeoutError as PWTimeout
-import re
+
+def resolver_captcha_2captcha(caminho_imagem: Path, api_key: str) -> str:
+    with open(caminho_imagem, "rb") as f:
+        b64 = base64.b64encode(f.read()).decode("utf-8")
+    payload = {"key": api_key, "method": "base64", "body": b64, "json": 1}
+    r = requests.post("http://2captcha.com/in.php", data=payload, timeout=40)
+    r.raise_for_status()
+    data = r.json()
+    if data.get("status") != 1:
+        raise RuntimeError(f"Falha ao enviar captcha: {data}")
+    cap_id = data["request"]
+    for _ in range(40):
+        time.sleep(5)
+        res = requests.get(
+            "http://2captcha.com/res.php",
+            params={"key": api_key, "action": "get", "id": cap_id, "json": 1},
+            timeout=40,
+        ).json()
+        if res.get("status") == 1:
+            return re.sub(r"\W", "", res["request"]).strip()
+        if res.get("request") != "CAPCHA_NOT_READY":
+            raise RuntimeError(f"Erro 2Captcha: {res}")
+    raise TimeoutError("Timeout aguardando solução do 2Captcha")
 
 def _log_frames(page):
     # opcional: ajuda a diagnosticar se há iframes
@@ -166,92 +185,43 @@ def preencher_cnpj_no_campo(fr, cnpj_limpo):
     time.sleep(0.3)
 
 # seletores padrão (ajuste se necessário)
-SEL_CAPTCHA_IMG = "img[src*='Captcha']"
+SEL_CAPTCHA_IMG = "img[src*='/Captcha/images/']"
 SEL_CAPTCHA_INPUTS = [
     "#_cfield",                # id direto (prioritário)
     "input[name='_cfield']",   # redundância útil
 ]
 
-def _prep_img_for_ocr(np_img: np.ndarray) -> Image.Image:
-    # cinza
-    if len(np_img.shape) == 3:
-        gray = cv2.cvtColor(np_img, cv2.COLOR_BGR2GRAY)
-    else:
-        gray = np_img.copy()
-    # upscale
-    gray = cv2.resize(gray, None, fx=2.8, fy=2.8, interpolation=cv2.INTER_CUBIC)
-    # limpeza leve + binarização
-    gray = cv2.medianBlur(gray, 3)
-    thr = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-                                cv2.THRESH_BINARY, 31, 10)
-    # garantir texto escuro em fundo claro
-    if (thr == 0).sum() < (thr == 255).sum():
-        thr = 255 - thr
-    return Image.fromarray(thr)
+def print_captcha(fr, out_path: Path = None) -> Path:
+    el = fr.locator("img[src*='/Captcha/images/']").first
+    el.wait_for(state="visible", timeout=15000)  # aumentamos o timeout aqui
+    if not out_path:
+        out_path = Path(f"./captcha_temp_{uuid4().hex[:6]}.png")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    el.screenshot(path=str(out_path))
+    return out_path
 
-def _ocr_try(pil_img: Image.Image, psm: int) -> str:
-    # whitelist alfanumérica; ajuste se o captcha tiver minúsculas
-    cfg = f"--oem 3 --psm {psm} -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-    txt = pytesseract.image_to_string(pil_img, lang="eng", config=cfg)
-    txt = re.sub(r"[^A-Za-z0-9]", "", txt).upper()
-    return txt
-
-def ler_captcha(fr, out_path: Path = None) -> str:
-    """
-    Captura o captcha (no frame fr), pré-processa e lê com Tesseract.
-    Salva screenshot se out_path for fornecido.
-    """
-    el = fr.locator(SEL_CAPTCHA_IMG).first
-    el.wait_for(state="visible", timeout=8000)
-    if out_path:
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        el.screenshot(path=str(out_path))
-
-    # também pega a imagem como bytes para trabalhar em memória
-    png_bytes = el.screenshot()
-    np_img = cv2.imdecode(np.frombuffer(png_bytes, np.uint8), cv2.IMREAD_COLOR)
-    pil = _prep_img_for_ocr(np_img)
-
-    # tenta alguns PSMs comuns para captcha
-    for psm in (8, 7, 13):
-        txt = _ocr_try(pil, psm=psm)
-        if txt and 4 <= len(txt) <= 8:  # ajuste do tamanho esperado se quiser
-            return txt
-    return ""  # deixou vazio se nada legível
-
+        
 def preencher_captcha(fr, texto_captcha: str) -> None:
-        # tenta pelos seletores conhecidos (id e name)
     for sel in SEL_CAPTCHA_INPUTS:
         try:
             loc = fr.locator(sel)
             if loc.count() and loc.is_visible():
                 loc.scroll_into_view_if_needed()
-                loc.click()
-                time.sleep(0.2)
-                loc.press("Control+A")
-                loc.press("Backspace")
-                time.sleep(0.1)
-                loc.type(texto_captcha, delay=50)  # digita como humano
-                time.sleep(0.2)
-                loc.press("Tab")  # dispara onblur
+                loc.fill("")  # limpa direto
+                loc.fill(texto_captcha)
+                loc.press("Tab")  # dispara validação GeneXus
                 logger.info(f"[Captcha] Preenchido com '{texto_captcha}' via seletor '{sel}'")
                 return
         except Exception as e:
             logger.warning(f"[Captcha] Falha ao tentar preencher com seletor {sel}: {e}")
 
-    # fallback: tenta encontrar por label (quase nunca funciona com GeneXus, mas incluímos)
     try:
-        loc = fr.get_by_label("Insira o código", exact=False)
+        loc = fr.locator("label:has-text('Insira o código') ~ input").first
+        loc.fill("")
         loc.fill(texto_captcha)
         loc.press("Tab")
-        return
-    except Exception:
-        try:
-            loc = fr.locator("label:has-text('Insira o código') ~ input").first
-            loc.fill(texto_captcha)
-            loc.press("Tab")
-        except Exception as e:
-            raise RuntimeError(f"[Captcha] Não foi possível preencher com '{texto_captcha}': {e}")
+    except Exception as e:
+        raise RuntimeError(f"[Captcha] Não foi possível preencher com '{texto_captcha}': {e}")
 
 # === Função principal ===
 def processar_pmm():
@@ -282,55 +252,42 @@ def processar_pmm():
                 # Preenche o campo do CNPJ no mesmo frame
                 preencher_cnpj_no_campo(fr, cnpj_limpo)
 
-                # --- Captura + OCR do captcha (no frame correto) ---
-                # Verifica se frame ainda está vivo
+                # Localiza o frame que contém o captcha
+                fr = _first_frame_with(page, "img[src*='/Captcha/images/']")
+                if not fr:
+                    raise RuntimeError("[Captcha] Não foi possível localizar o frame contendo a imagem do captcha.")
+
+                # Captura e salva o captcha
+                captcha_path = print_captcha(fr, OUTPUT_DIR / f"captcha_{cnpj_limpo}.png")
+
+                # Resolve o captcha com 2Captcha
+                texto_captcha = resolver_captcha_2captcha(captcha_path, API_KEY_2CAPTCHA)
+
+                # Preenche o captcha no campo correto
+                preencher_captcha(fr, texto_captcha)
+
+                # Clica no botão Consultar e aguarda a nova aba abrir
                 try:
-                    fr.title()
-                except Exception:
-                    logger.warning(f"Frame anterior foi fechado. Recarregando página e tentando de novo.")
-                    page.goto(URL_PMM, timeout=TIMEOUT)
-                    page.wait_for_load_state("domcontentloaded", timeout=10000)
-                    fr = selecionar_radio_cnpj(page)
-                    preencher_cnpj_no_campo(fr, cnpj_limpo)
+                    with context.expect_page(timeout=30000) as nova_pagina_evento:
+                        page.eval_on_selector("input[name='BTNCONSULTAR']", "el => el.click()")
 
-                # Captura + OCR do captcha
-                captcha_path = OUTPUT_DIR / f"captcha_{cnpj_limpo}.png"
-                texto_captcha = ler_captcha(fr, out_path=captcha_path)
+                    nova_aba = nova_pagina_evento.value
+                    time.sleep(5)
+                    nova_aba.wait_for_load_state("networkidle", timeout=30000)
+                    logger.info(f"[Nova aba] Página carregada com sucesso: {nova_aba.url}")
 
-                logger.info(f"[Captcha] lido='{texto_captcha}'")
+                except PWTimeout:
+                    raise RuntimeError("[Erro] A nova aba não foi aberta após clicar em 'Consultar' dentro de 30 segundos.")
 
-                # (opcional) se vier vazio, tentar 1 refresh simples da imagem e reler
-                if not texto_captcha:
-                    try:
-                        # tente clicar em algo como "Recarregar" se existir
-                        fr.locator("text=Recarregar, Atualizar, Novo Código").first.click()
-                        time.sleep(0.8)
-                        texto_captcha = ler_captcha(fr, out_path=captcha_path)
-                        logger.info(f"[Captcha retry] lido='{texto_captcha}'")
-                    except Exception:
-                        pass
-
-                # --- Preencher ---
-                preencher_captcha(fr, texto_captcha or "")
-
-                # === Clicar em "Consultar" e capturar nova aba com o PDF ===
-                with context.expect_page() as nova_pagina_evento:
-                    page.get_by_role("button", name="Consultar").click()
-
-                nova_aba = nova_pagina_evento.value
-                nova_aba.wait_for_load_state("networkidle", timeout=15000)
-
-                # Salvar PDF renderizado da nova aba
+                # Exporta o PDF e extrai validade
                 temp_path = OUTPUT_DIR / f"temp_{cnpj_limpo}.pdf"
                 nova_aba.pdf(path=str(temp_path), format="A4")
 
-                # Extrair validade e salvar com nome correto
                 validade = extrair_validade_pdf(temp_path)
-
                 if validade:
                     salvar_valor_na_planilha(cnpj_limpo, validade, PLANILHA, ABA)
                     validade_formatada = datetime.strptime(validade, "%d/%m/%Y").strftime("%Y%m%d")
-                    nome_arquivo = f"sefaz_n_contribuinte_{cnpj_limpo}_{validade_formatada}.pdf"
+                    nome_arquivo = f"pmm_{cnpj_limpo}_{validade_formatada}.pdf"
                     destino_pdf = OUTPUT_DIR / nome_arquivo
                     temp_path.rename(destino_pdf)
                     logger.success(f"{cnpj_limpo} → Sucesso: validade {validade}")
@@ -351,6 +308,6 @@ def processar_pmm():
 
     logger.info("Processo concluído.")
 
-# === Execução ===
+
 if __name__ == "__main__":
     processar_pmm()
