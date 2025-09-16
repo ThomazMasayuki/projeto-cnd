@@ -30,11 +30,7 @@ API_KEY_2CAPTCHA = os.getenv("API_KEY_2CAPTCHA", "30924a201f06a3b554d7479c487fee
 POLLING_2CAPTCHA_SEG = 2
 MAX_POLLS_2CAPTCHA = 50 
 MAX_TENTATIVAS_CNPJ = 6
-HEADLESS = True        
-
-# =====================
-# Utilitários planilha (openpyxl)
-# =====================
+HEADLESS = False    
 
 def _abrir_ws(caminho: Path, aba: str):
     wb = load_workbook(caminho)
@@ -245,9 +241,21 @@ def processar_crf():
 
                     # --- Captura e resolve o captcha (2Captcha image) ---
                     time.sleep(0.3)
-                    captcha_img = page.locator("img[alt*='captcha' i], img[src*='captcha']").first
+                    # Captura base64 direto da tag <img>
+                    img_element = page.locator("img[alt='Codigo2']").first
+                    base64_src = img_element.get_attribute("src")
+
+                    if not base64_src.startswith("data:image"):
+                        raise ValueError("A imagem captcha não está em base64 embutido!")
+
+                    # Extrai base64 puro (remove cabeçalho 'data:image/png;base64,')
+                    base64_data = base64_src.split(",")[1]
                     captcha_path = OUTPUT_DIR / f"captcha_{cnpj_limpo}.png"
-                    captcha_img.screenshot(path=str(captcha_path))
+
+                    # Decodifica e salva localmente
+                    with open(captcha_path, "wb") as f:
+                        f.write(base64.b64decode(base64_data))
+
 
                     texto_captcha = resolver_captcha_2captcha(captcha_path, API_KEY_2CAPTCHA)
                     logger.info(f"2Captcha → '{texto_captcha}'")
@@ -293,20 +301,24 @@ def processar_crf():
                     page.wait_for_load_state("networkidle", timeout=20000)
 
                     # Verifica se apareceu o link do certificado
-                    link_cert = page.get_by_role("link", name=re.compile("Certificado de Regularidade do FGTS - CRF", re.I))
-                    if not link_cert.first.is_visible(timeout=3000):
+                    # Verifica se apareceu o link do certificado pelo ID específico
+                    link_cert = page.locator("#mainForm\\:j_id51")
+
+                    try:
+                        link_cert.wait_for(state="visible", timeout=3000)
+                    except PWTimeout:
                         screenshot_err = OUTPUT_DIR / f"crf_{cnpj_limpo}_erro_consulta.png"
                         page.screenshot(path=str(screenshot_err), full_page=True)
                         logger.warning("Consulta não retornou link do certificado; tentando novamente…")
                         try:
-                            captcha_img.click()
+                            img_element.click()
                         except Exception:
                             pass
                         time.sleep(1.2)
                         continue
 
                     # Segue para o certificado
-                    link_cert.first.click()
+                    link_cert.click()
                     page.wait_for_load_state("networkidle", timeout=15000)
 
                     try:
