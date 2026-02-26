@@ -23,7 +23,6 @@ OUTPUT_DIR = Path("certidoes_baixadas") / ABA.replace(" ", "_")
 URL_PMM = "https://semefatende.manaus.am.gov.br/servicoJanela.php?servico=1412"
 TIMEOUT = 40_000
 REGEX_VALIDADE = r"VÁLIDA ATÉ \s*(\d{2}/\d{2}/\d{4})"
-API_KEY_2CAPTCHA = "30924a201f06a3b554d7479c487fee8e"
 
 # === Funções utilitárias ===
 def normalizar_cnpj(cnpj: str) -> str:
