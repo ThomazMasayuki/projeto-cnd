@@ -22,14 +22,9 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 URL_SITE = 'https://consultasaj.tjam.jus.br/sco/abrirCadastro.do'
 SITEKEY = '6LcnC3cdAAAAABWUEy-SzR8kMrk3FA9llI6hU934'
-EMAIL_PADRAO = "adm@joyceassessoria.com"
-API_KEY_2CAPTCHA = '30924a201f06a3b554d7479c487fee8e'
 REGEX_VALIDADE = r"VÁLIDA ATÉ:\s*(\d{2}/\d{2}/\d{4})"
 
 # === Config Webmail / Roundcube ===
-WEBMAIL_URL = "https://br170.hostgator.com.br:2096/cpsess9529150885/webmail/jupiter/index.html?login=1&post_login=55102443374772"
-EMAIL_USER = "seu_email_aqui@dominio.com"  # <-- PREENCHER
-EMAIL_PASS = "sua_senha_aqui"              # <-- PREENCHER
 OUTPUT_EMAIL_DIR = Path("certidoes_email")
 OUTPUT_EMAIL_DIR.mkdir(parents=True, exist_ok=True)
 
