@@ -26,7 +26,6 @@ URL_CRF = "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregado
 TIMEOUT = 40_000
 REGEX_VALIDADE_FINAL = r"Validade:\s*\d{2}/\d{2}/\d{4}\s*a\s*(\d{2}/\d{2}/\d{4})"
 
-API_KEY_2CAPTCHA = os.getenv("API_KEY_2CAPTCHA", "30924a201f06a3b554d7479c487fee8e")
 POLLING_2CAPTCHA_SEG = 2
 MAX_POLLS_2CAPTCHA = 50 
 MAX_TENTATIVAS_CNPJ = 6
