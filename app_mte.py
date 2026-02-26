@@ -22,13 +22,6 @@ URL_MTE = "https://eprocesso.sit.trabalho.gov.br/Entrar?ReturnUrl=%2FCertidao%2F
 TIMEOUT = 40_000
 REGEX_VALIDADE = r"Válida até:\s*(\d{2}/\d{2}/\d{4})"
 
-# credenciais
-CPF_LOGIN = "02448982198"   # coloque seu CPF
-SENHA_LOGIN = "15468973Tt*"
-
-API_KEY_2CAPTCHA = "30924a201f06a3b554d7479c487fee8e"   # substitua pela sua chave real
-SITEKEY_HCAPTCHA = "93b08d40-d46c-400a-ba07-6f91cda815b9"
-
 # === Funções utilitárias ===
 def normalizar_cnpj(cnpj: str) -> str:
     return re.sub(r"\D", "", str(cnpj)).zfill(14)
