@@ -2,9 +2,9 @@
 
 ## Visão Geral
 
-Este projeto consiste no desenvolvimento de uma solução automatizada para **emissão de certidões fiscais e trabalhistas** utilizada em um ambiente real de escritório de contabilidade. O sistema foi projetado para reduzir esforço operacional manual, aumentar confiabilidade no processo e garantir padronização na obtenção de documentos oficiais.
+Este projeto foi criado para ser uma solução automatizada para **emissão de certidões fiscais e trabalhistas** para um escritório de contabilidade. O sistema foi projetado para reduzir esforço operacional, aumentar confiabilidade no processo e garantir padronização na obtenção de documentos oficiais.
 
-A aplicação executa rotinas automatizadas que acessam portais governamentais, preenchem formulários, emitem certidões e organizam os arquivos gerados, tudo de forma programada e controlada.
+A aplicação executa rotinas automatizadas que acessam portais governamentais, preenchem formulários, emitem certidões e organizam os arquivos gerados, tudo de forma programada.
 
 ---
 
