@@ -22,7 +22,6 @@ OUTPUT_DIR = Path("certidoes_baixadas") / ABA.replace(" ", "_")
 URL_CDT = "https://cndt-certidao.tst.jus.br/gerarCertidao.faces"
 TIMEOUT = 40_000
 REGEX_VALIDADE = r"Validade:\s*(\d{2}/\d{2}/\d{4})"
-API_KEY_2CAPTCHA = "30924a201f06a3b554d7479c487fee8e"  
 MAX_TENTATIVAS_CNPJ = 6
 HEADLESS = False
 POLLING_2CAPTCHA_SEG = 5
