@@ -21,7 +21,6 @@ OUTPUT_DIR = Path("certidoes_baixadas") / ABA.replace(" ", "_")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 URL_SITE = 'https://consultasaj.tjam.jus.br/sco/abrirCadastro.do'
-SITEKEY = '6LcnC3cdAAAAABWUEy-SzR8kMrk3FA9llI6hU934'
 REGEX_VALIDADE = r"VÁLIDA ATÉ:\s*(\d{2}/\d{2}/\d{4})"
 
 # === Config Webmail / Roundcube ===
